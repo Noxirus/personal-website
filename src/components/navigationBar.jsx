@@ -44,4 +44,7 @@ const NavigationBar = (args) => {
     </Navbar>
   </div>);
 }
+
+//TODO add links to media/github/linkedin/youtube
+//TODO add Margins/buffer space around the navbar buttons, right align buttons? Left align home page link?
 export default NavigationBar;
