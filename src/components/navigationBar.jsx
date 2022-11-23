@@ -26,9 +26,6 @@ const NavigationBar = (args) => {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="sm-auto" navbar>
-        <NavItem>
-            <NavLink href="/about-me">My Skillset</NavLink>
-          </NavItem>
           <NavItem>
             <NavLink href="/projects">My Projects</NavLink>
           </NavItem>
