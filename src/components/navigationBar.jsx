@@ -23,7 +23,7 @@ const NavigationBar = (args) => {
   const toggle = () => setIsOpen(!isOpen);
 
    return ( <div>
-    <Navbar expand="md" {...args}>
+    <StyledNavbar expand="md" {...args}>
       <NavbarBrand href="/">Hamish Harrison</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
@@ -39,10 +39,12 @@ const NavigationBar = (args) => {
         <FontAwesomeIcon icon={faGithub} onClick={() => window.open("https://github.com/noxirus")} />
         <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
-    </Navbar>
+    </StyledNavbar>
   </div>);
 }
 
-//TODO add links to media/github/linkedin/youtube
-//TODO add Margins/buffer space around the navbar buttons, right align buttons? Left align home page link?
 export default NavigationBar;
+
+const StyledNavbar = styled(Navbar)`
+  padding: 25px;
+`

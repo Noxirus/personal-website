@@ -10,17 +10,17 @@ import firebaseIcon from "../../../Images/Icons/file-type-firebase.svg";
 import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
+import { IceColourPalette } from '../../../library/colorPalette';
 
 const SkillsSection = () => {
 
    return (     <InfoSection>
     <Row>
         <Col>
-            <h1>Professional Technologies</h1>
+            <CenteredTitle>Professional Technologies</CenteredTitle>
         </Col>
     </Row>
     <Row>
-        <Col>
             <SkillIcon imgRef={cSharpIcon} altText="C#" />
             <SkillIcon imgRef={javascriptIcon} altText="C#" />
             <SkillIcon imgRef={visualStudioIcon} altText="C#" />
@@ -28,17 +28,19 @@ const SkillsSection = () => {
             <SkillIcon imgRef={reactIcon} altText="C#" />
             <SkillIcon imgRef={gitHubIcon} altText="C#" />
             <SkillIcon imgRef={firebaseIcon} altText="C#" />
-            <SkillIcon imgRef={npmIcon} altText="C#" />
-        </Col>
-        
+            <SkillIcon imgRef={npmIcon} altText="C#" />       
     </Row>
 </InfoSection>);
 }
 export default SkillsSection;
-
 //TODO export this or make this different? Depends on the page layout
 const InfoSection = styled(Container)`
-    border-width: 5px;
-    border-style: solid;
-    test-code: ${props => props.test};
+margin-left: auto;
+margin-right: auto;
+
+`
+
+const CenteredTitle = styled.h1`
+    text-align: center;
+    color: ${IceColourPalette.primary}
 `

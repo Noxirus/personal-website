@@ -6,13 +6,13 @@ import BlogSection from './blog-section';
 import PortfolioSection from './portfolio-section';
 
 import SkillsSection from './skills-section';
-
+import { IceColourPalette } from '../../../library/colorPalette';
 
 const HomePage = () => {
     
 
 
-   return (<React.Fragment>
+   return (<BackgroundDiv>
     <AboutSection />
     <SkillsSection />
     <PortfolioSection />
@@ -28,7 +28,7 @@ const HomePage = () => {
 
     {/*Social media at the bottom? */}
 
-   </React.Fragment>);
+   </BackgroundDiv>);
 }
 export default HomePage;
 
@@ -36,6 +36,10 @@ const InfoSection = styled(Container)`
     border-width: 5px;
     border-style: solid;
     test-code: ${props => props.test};
+`
+
+const BackgroundDiv = styled.div`
+    background-color: ${IceColourPalette.grey};
 `
 //Border?
 //Alternating color pattern?

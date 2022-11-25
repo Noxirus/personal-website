@@ -34,8 +34,6 @@ const PortfolioSection = () => {
             <Col>
                 <ProjectCard details={FinalVerdict} />
             </Col>    
-    </Row>
-    <Row>
             <Col>
                 <ProjectCard details={TeamUnbreakable} />
             </Col>
