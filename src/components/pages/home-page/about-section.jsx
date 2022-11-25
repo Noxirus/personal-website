@@ -34,7 +34,9 @@ border: 2px solid #e9385a;
 const InfoSection = styled(Container)`
     border-width: 5px;
     border-style: solid;
-
+    padding-top: 200px;
 
     test-code: ${props => props.test};
 `
+
+//TODO this padding on top needs to get smaller based on screen size

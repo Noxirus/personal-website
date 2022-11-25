@@ -3,18 +3,19 @@ import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import { Blogs } from "../../../library/blogLibrary"
 import BlogCard from '../blog/blog-card';
-
+import { CenteredTitle } from '../../../library/styleLibrary';
 
 const BlogSection = () => {
 
    return (<InfoSection>
     <Row>
         <Col>
-            <h1>
+            <CenteredTitle>
                 Check out my most recent blog post below
-            </h1>
+            </CenteredTitle>
         </Col>
     </Row>
+    <hr />
     <Row>
         <Col>
             <BlogCard details={Blogs[0]}  index={(Blogs.length - 1) - Blogs[0].id} />
@@ -32,5 +33,7 @@ export default BlogSection;
 const InfoSection = styled(Container)`
     border-width: 5px;
     border-style: solid;
-    test-code: ${props => props.test};
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
 `

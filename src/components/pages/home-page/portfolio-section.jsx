@@ -13,14 +13,17 @@ import {
     ProjectArtemis 
 } from '../../../library/portfolioLibrary';
 
+import { CenteredTitle } from '../../../library/styleLibrary';
+
 const PortfolioSection = () => {
 
    return (<InfoSection>
     <Row>
         <Col>
-            <h2>My portfolio of professional projects</h2>
+            <CenteredTitle>My portfolio of professional projects</CenteredTitle>
         </Col>
     </Row>
+    <hr />
     <Row>
             <Col>
                 <ProjectCard details={PipePuzzles} />
@@ -55,4 +58,6 @@ const InfoSection = styled(Container)`
     border-width: 5px;
     border-style: solid;
     test-code: ${props => props.test};
+
+    padding-top: 250px;
 `

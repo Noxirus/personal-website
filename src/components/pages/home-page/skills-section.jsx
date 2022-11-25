@@ -11,6 +11,7 @@ import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { IceColourPalette } from '../../../library/colorPalette';
+import { CenteredTitle } from '../../../library/styleLibrary';
 
 const SkillsSection = () => {
 
@@ -20,6 +21,7 @@ const SkillsSection = () => {
             <CenteredTitle>Professional Technologies</CenteredTitle>
         </Col>
     </Row>
+    <hr />
     <Row>
             <SkillIcon imgRef={cSharpIcon} altText="C#" />
             <SkillIcon imgRef={javascriptIcon} altText="C#" />
@@ -38,9 +40,6 @@ const InfoSection = styled(Container)`
 margin-left: auto;
 margin-right: auto;
 
-`
+padding-top: 300px;
 
-const CenteredTitle = styled.h1`
-    text-align: center;
-    color: ${IceColourPalette.primary}
 `
