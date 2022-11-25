@@ -27,9 +27,6 @@ const NavigationBar = (args) => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="sm-auto" navbar>
           <NavItem>
-            <NavLink href="/projects">My Projects</NavLink>
-          </NavItem>
-          <NavItem>
             <NavLink href="/blog">Blog</NavLink>
           </NavItem>
           <NavItem>

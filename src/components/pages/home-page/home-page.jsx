@@ -2,24 +2,21 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import AboutSection from './about-section';
+import BlogSection from './blog-section';
 import PortfolioSection from './portfolio-section';
 
 import SkillsSection from './skills-section';
 
+
 const HomePage = () => {
+    
+
 
    return (<React.Fragment>
     <AboutSection />
     <SkillsSection />
     <PortfolioSection />
-    <InfoSection>
-        <Row>
-            <Col>
-                <h2>Recent blog updates!</h2>
-                <p>I like to keep in touch with various things I have been working on, feel free to read up on them here!</p>
-            </Col>
-        </Row>
-    </InfoSection>
+    <BlogSection />
     <InfoSection>
         <Row>
             <Col>
