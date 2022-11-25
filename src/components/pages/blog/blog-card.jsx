@@ -2,9 +2,9 @@ import React from 'react';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactstrap';
 import styled from 'styled-components';
 
-const BlogCard = ({details}) => {
+const BlogCard = ({details, index}) => {
 
-   return (<CardStyle onClick={() => window.open("blog/" + details.id, "_self")}>
+   return (<CardStyle onClick={() => window.open("blog/" + index, "_self")}>
    <img
      alt={details.description}
      src="https://picsum.photos/300/200" //TODO add image ref here

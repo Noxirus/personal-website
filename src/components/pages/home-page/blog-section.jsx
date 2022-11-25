@@ -6,6 +6,7 @@ import BlogCard from '../blog/blog-card';
 
 
 const BlogSection = () => {
+
    return (<InfoSection>
     <Row>
         <Col>
@@ -16,7 +17,7 @@ const BlogSection = () => {
     </Row>
     <Row>
         <Col>
-            <BlogCard details={Blogs[Blogs.length - 1]} />
+            <BlogCard details={Blogs[0]}  index={(Blogs.length - 1) - Blogs[0].id} />
         </Col>
     </Row>
     <Row>

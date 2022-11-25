@@ -18,7 +18,7 @@ const blog = Blogs[id];
             <h3>{blog.date}</h3>
         </Col>
     </Row>
-            {blog.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+            {blog.paragraphs.map((paragraph, id) => <p key={id}>{paragraph}</p>)}
    </Container>);
 }
 export default BlogView;

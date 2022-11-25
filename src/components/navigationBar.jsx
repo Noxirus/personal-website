@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import {
   Collapse,
@@ -14,6 +15,7 @@ import {
   NavbarText,
 } from 'reactstrap';
 import styled from 'styled-components';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const NavigationBar = (args) => {
@@ -34,6 +36,8 @@ const NavigationBar = (args) => {
           </NavItem>
         </Nav>
         <NavbarText>Creating Software</NavbarText>
+        <FontAwesomeIcon icon={faGithub} onClick={() => window.open("https://github.com/noxirus")} />
+        <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
     </Navbar>
   </div>);
