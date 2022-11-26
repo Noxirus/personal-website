@@ -59,6 +59,5 @@ const StyledNavbar = styled(Navbar)`
   position: fixed;
   background-color: white;
   width: 100%;
-
   box-shadow: 0px 5px #C0C0C0;
 `

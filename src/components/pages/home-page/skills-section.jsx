@@ -23,6 +23,7 @@ const SkillsSection = () => {
     </Row>
     <br />
     <Row>
+        <StyledIconCol>
             <SkillIcon imgRef={cSharpIcon} altText="C#" />
             <SkillIcon imgRef={javascriptIcon} altText="C#" />
             <SkillIcon imgRef={visualStudioIcon} altText="C#" />
@@ -30,8 +31,16 @@ const SkillsSection = () => {
             <SkillIcon imgRef={reactIcon} altText="C#" />
             <SkillIcon imgRef={gitHubIcon} altText="C#" />
             <SkillIcon imgRef={firebaseIcon} altText="C#" />
-            <SkillIcon imgRef={npmIcon} altText="C#" />       
+            <SkillIcon imgRef={npmIcon} altText="C#" />     
+        </StyledIconCol>  
     </Row>
 </InfoSection>);
 }
 export default SkillsSection;
+
+const StyledIconCol = styled(Col)`
+margin-left:auto;
+margin-right:auto;
+display:block;
+text-align:center
+`
