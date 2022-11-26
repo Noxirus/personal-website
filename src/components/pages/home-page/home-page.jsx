@@ -7,6 +7,7 @@ import PortfolioSection from './portfolio-section';
 
 import SkillsSection from './skills-section';
 import { IceColourPalette } from '../../../library/colorPalette';
+import { InfoSection } from '../../../library/styleLibrary';
 
 const HomePage = () => {
     
@@ -32,14 +33,8 @@ const HomePage = () => {
 }
 export default HomePage;
 
-const InfoSection = styled(Container)`
-    border-width: 5px;
-    border-style: solid;
-    test-code: ${props => props.test};
-`
-
 const BackgroundDiv = styled.div`
-    background-color: ${IceColourPalette.grey};
+    background-color: ${IceColourPalette.black};
 `
 //Border?
 //Alternating color pattern?

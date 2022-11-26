@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
-import { ParagraphText, PrimaryText, SecondaryText } from '../../../library/styleLibrary';
+import { InfoSection, ParagraphText, PrimaryText, SecondaryText } from '../../../library/styleLibrary';
 
 const AboutSection = () => {
 
-   return (<InfoSection>
+   return (<InfoSection padding="300px">
     <Row>
         <Col xl="6" md="12">
             <PrimaryText fontSize="4em">Hamish Harrison</PrimaryText>
@@ -30,13 +30,4 @@ background-repeat: no-repeat;
 background-size: contain;
 border: 2px solid #e9385a;
 `
-
-const InfoSection = styled(Container)`
-    border-width: 5px;
-    border-style: solid;
-    padding-top: 200px;
-
-    test-code: ${props => props.test};
-`
-
 //TODO this padding on top needs to get smaller based on screen size

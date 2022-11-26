@@ -11,17 +11,17 @@ import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { IceColourPalette } from '../../../library/colorPalette';
-import { CenteredTitle } from '../../../library/styleLibrary';
+import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 
 const SkillsSection = () => {
 
-   return (     <InfoSection>
+   return (     <InfoSection padding="300px">
     <Row>
         <Col>
             <CenteredTitle>Professional Technologies</CenteredTitle>
         </Col>
     </Row>
-    <hr />
+    <br />
     <Row>
             <SkillIcon imgRef={cSharpIcon} altText="C#" />
             <SkillIcon imgRef={javascriptIcon} altText="C#" />
@@ -35,11 +35,3 @@ const SkillsSection = () => {
 </InfoSection>);
 }
 export default SkillsSection;
-//TODO export this or make this different? Depends on the page layout
-const InfoSection = styled(Container)`
-margin-left: auto;
-margin-right: auto;
-
-padding-top: 300px;
-
-`

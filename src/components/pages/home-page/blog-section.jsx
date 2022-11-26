@@ -1,13 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import styled from 'styled-components';
+import React from 'react';
+import { Row, Col } from 'reactstrap';
 import { Blogs } from "../../../library/blogLibrary"
 import BlogCard from '../blog/blog-card';
-import { CenteredTitle } from '../../../library/styleLibrary';
+import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 
 const BlogSection = () => {
 
-   return (<InfoSection>
+   return (<InfoSection padding="150px">
     <Row>
         <Col>
             <CenteredTitle>
@@ -29,11 +28,3 @@ const BlogSection = () => {
 </InfoSection>);
 }
 export default BlogSection;
-
-const InfoSection = styled(Container)`
-    border-width: 5px;
-    border-style: solid;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 150px;
-`
