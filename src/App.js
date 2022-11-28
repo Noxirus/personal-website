@@ -9,12 +9,14 @@ import NotFound from './components/not-found';
 import BlogView from './components/pages/blog/blog-view';
 import BlogArchives from './components/pages/blog/blog-archives';
 import ProjectPage from './components/pages/projects/project-page';
+import styled from 'styled-components';
+import { IceColourPalette } from './library/colorPalette';
 
 function App() {
   return (
     <React.Fragment>
       <NavigationBar />
-    
+      <BackgroundDiv />
       <BrowserRouter>
         <Routes>
           <Route path="/blog" element={<BlogArchives />} />
@@ -30,3 +32,12 @@ function App() {
 }
 
 export default App;
+
+//Add static background? Do I want a background?
+const BackgroundDiv = styled.div`
+    background-color: ${IceColourPalette.black};
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:-5;
+`

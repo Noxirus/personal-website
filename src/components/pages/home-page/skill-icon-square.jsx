@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col } from 'reactstrap';
 import styled from 'styled-components';
 import { IceColourPalette } from '../../../library/colorPalette';
 

@@ -6,18 +6,11 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText,
 } from 'reactstrap';
 import styled from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { IceColourPalette } from '../library/colorPalette';
-
 
 const NavigationBar = (args) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +22,12 @@ const NavigationBar = (args) => {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar />
-        <StyledNavlink href="/blog">Blog</StyledNavlink>
+
+        {/*Smooth scroll for these links */}
+        <StyledNavlink>About</StyledNavlink>
+        <StyledNavlink>Experience</StyledNavlink>
+        <StyledNavlink>Projects</StyledNavlink>
+        
         <StyledNavlink href="/contact-me">Contact Me</StyledNavlink>
         <NavbarText>Inspring text here?</NavbarText>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />

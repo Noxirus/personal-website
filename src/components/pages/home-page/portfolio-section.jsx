@@ -3,13 +3,8 @@ import { Row, Col, Button } from 'reactstrap';
 import ProjectCard from '../projects/project-card';
 import { 
     TeamUnbreakable, 
-    HIMALAYASTrial, 
     PipePuzzles, 
-    TheWilfredEscape, 
     AbandonShip, 
-    OmegaProtocol, 
-    FinalVerdict, 
-    ProjectArtemis 
 } from '../../../library/portfolioLibrary';
 
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';

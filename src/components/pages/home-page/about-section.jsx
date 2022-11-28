@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import { InfoSection, ParagraphText, PrimaryText, SecondaryText } from '../../../library/styleLibrary';
 

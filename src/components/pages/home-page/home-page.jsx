@@ -1,12 +1,11 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import AboutSection from './about-section';
 import BlogSection from './blog-section';
 import PortfolioSection from './portfolio-section';
 
 import SkillsSection from './skills-section';
-import { IceColourPalette } from '../../../library/colorPalette';
 import { InfoSection } from '../../../library/styleLibrary';
 
 
@@ -16,7 +15,7 @@ const HomePage = () => {
     <AboutSection />
     <SkillsSection />
     <PortfolioSection />
-    <BlogSection />
+    {/* <BlogSection /> */}
     <InfoSection>
         <Row>
             <Col>
@@ -31,7 +30,7 @@ const HomePage = () => {
 export default HomePage;
 
 const BackgroundDiv = styled.div`
-    background-color: ${IceColourPalette.black};
+
 `
 //Border?
 //Alternating color pattern?
