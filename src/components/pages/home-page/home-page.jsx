@@ -9,9 +9,8 @@ import SkillsSection from './skills-section';
 import { IceColourPalette } from '../../../library/colorPalette';
 import { InfoSection } from '../../../library/styleLibrary';
 
-const HomePage = () => {
-    
 
+const HomePage = () => {
 
    return (<BackgroundDiv>
     <AboutSection />
@@ -26,9 +25,7 @@ const HomePage = () => {
             </Col>
         </Row>
     </InfoSection>
-
     {/*Social media at the bottom? */}
-
    </BackgroundDiv>);
 }
 export default HomePage;

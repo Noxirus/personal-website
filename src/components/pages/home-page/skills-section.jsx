@@ -12,13 +12,14 @@ import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { IceColourPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
+import { ParagraphText } from '../projects/project-card';
 
 const SkillsSection = () => {
 
    return (     <InfoSection padding="300px">
     <Row>
         <Col>
-            <CenteredTitle>Professional Technologies</CenteredTitle>
+            <CenteredTitle>Experience</CenteredTitle>
         </Col>
     </Row>
     <br />
@@ -33,6 +34,12 @@ const SkillsSection = () => {
             <SkillIcon imgRef={firebaseIcon} altText="C#" />
             <SkillIcon imgRef={npmIcon} altText="C#" />     
         </StyledIconCol>  
+    </Row>
+    <br />
+    <Row>
+        <Col>
+            <ParagraphText>Text blurb here about my experience and what I have done during my professional/personal career</ParagraphText>
+        </Col>
     </Row>
 </InfoSection>);
 }

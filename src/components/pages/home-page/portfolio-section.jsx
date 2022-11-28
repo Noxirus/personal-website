@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 import ProjectCard from '../projects/project-card';
 import { 
     TeamUnbreakable, 
@@ -19,20 +19,15 @@ const PortfolioSection = () => {
    return (<InfoSection padding="250px">
     <Row>
         <Col>
-            <CenteredTitle>My portfolio of professional projects</CenteredTitle>
+            <CenteredTitle>Projects I have worked on</CenteredTitle>
         </Col>
     </Row>
     <br />
-    <Row>
-        <ProjectCard details={PipePuzzles} />
-        <ProjectCard details={TheWilfredEscape} />
-        <ProjectCard details={AbandonShip} />
-        <ProjectCard details={FinalVerdict} />
-        <ProjectCard details={TeamUnbreakable} />
-        <ProjectCard details={HIMALAYASTrial} />
-        <ProjectCard details={OmegaProtocol} />
-        <ProjectCard details={ProjectArtemis} />
-    </Row>
+    
+    <ProjectCard details={PipePuzzles} />
+    <ProjectCard details={AbandonShip} />
+    <ProjectCard details={TeamUnbreakable} />
+    <Button onClick={() => window.open("/projects", "_self")}>See more projects</Button>
 </InfoSection>);
 }
 export default PortfolioSection;

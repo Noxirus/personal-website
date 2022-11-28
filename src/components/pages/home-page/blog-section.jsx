@@ -15,11 +15,7 @@ const BlogSection = () => {
         </Col>
     </Row>
     <hr />
-    <Row>
-        <Col>
-            <BlogCard details={Blogs[0]}  index={(Blogs.length - 1) - Blogs[0].id} />
-        </Col>
-    </Row>
+        <BlogCard details={Blogs[0]}  index={(Blogs.length - 1) - Blogs[0].id} />
     <Row>
         <Col>
             <p>Insert button here to view blog archives</p>

@@ -18,7 +18,7 @@ color: ${IceColourPalette.secondary};
 `
 
 export const CenteredTitle = styled.h1`
-font-size: clamp(40px, 8vw, 60px);
+font-size: clamp(35px, 6vw, 60px);
 text-align: center;
     color: ${IceColourPalette.primary}
 `
