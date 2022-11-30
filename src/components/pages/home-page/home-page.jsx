@@ -2,11 +2,10 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import AboutSection from './about-section';
-import BlogSection from './blog-section';
-import PortfolioSection from './portfolio-section';
-
 import SkillsSection from './skills-section';
 import { InfoSection } from '../../../library/styleLibrary';
+import ProjectSection from './project-section';
+import ContactMe from '../contact-me';
 
 
 const HomePage = () => {
@@ -14,16 +13,9 @@ const HomePage = () => {
    return (<BackgroundDiv>
     <AboutSection />
     <SkillsSection />
-    <PortfolioSection />
+    <ProjectSection />
     {/* <BlogSection /> */}
-    <InfoSection>
-        <Row>
-            <Col>
-                <h2>Contact Me!</h2>
-                <p>Feel free to send me message about any opportunities!</p>
-            </Col>
-        </Row>
-    </InfoSection>
+    <ContactMe />
     {/*Social media at the bottom? */}
    </BackgroundDiv>);
 }

@@ -13,7 +13,8 @@ export const HIMALAYASTrial = {
     roles: "web developer",
     img: "Imgrefhere?",
     link: "https://himalayastrial.ca/",
-    description: "Website made from the ground up using React",
+    description: "Website made from the ground up using React. Utilizes features from Firebase in order to handle messaging services along with partner matching based on filters. " + 
+    "Contains an administrative backend for handling web page content as well as ticket handling/feedback.",
 }
 
 export const PipePuzzles = {
@@ -41,7 +42,9 @@ export const AbandonShip = {
     roles: "programmer, designer",
     img: "imgrefHERE",
     link: "https://www.monikerpartners.com/virtual-games/abandon-ship",
-    description: "A lost at sea escape room!",
+    description: "A lost at sea escape room! Digital experience made from Unity WebGL. Uses Addressable loading in order for better performance in regards to loading times. " 
+    + "Utilizes React plugins in order to communicate with the users browser and " 
+    + "subsequently the Firebase Database, this allows for team synchronized states",
 }
 
 export const OmegaProtocol = {

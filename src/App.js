@@ -8,7 +8,7 @@ import ContactMe from './components/pages/contact-me';
 import NotFound from './components/not-found';
 import BlogView from './components/pages/blog/blog-view';
 import BlogArchives from './components/pages/blog/blog-archives';
-import ProjectPage from './components/pages/projects/project-page';
+import ProjectPage from './components/pages/projects/project-archive';
 import styled from 'styled-components';
 import { IceColourPalette } from './library/colorPalette';
 

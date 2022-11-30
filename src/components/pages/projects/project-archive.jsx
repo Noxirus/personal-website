@@ -10,7 +10,7 @@ import {
     OmegaProtocol, 
     FinalVerdict, 
     ProjectArtemis 
-} from '../../../library/portfolioLibrary';
+} from '../../../library/projectLibrary';
 import ProjectCard from './project-card';
 
 const ProjectPage = () => {
@@ -22,13 +22,13 @@ const ProjectPage = () => {
         </Col>
     </Row>
     <ProjectCard details={PipePuzzles} />
-    <ProjectCard details={TheWilfredEscape} />
+    <ProjectCard details={TheWilfredEscape} flipped={true} />
     <ProjectCard details={AbandonShip} />
-    <ProjectCard details={FinalVerdict} />
+    <ProjectCard details={FinalVerdict} flipped={true} />
     <ProjectCard details={TeamUnbreakable} />
-    <ProjectCard details={HIMALAYASTrial} />
+    <ProjectCard details={HIMALAYASTrial} flipped={true} />
     <ProjectCard details={OmegaProtocol} />
-    <ProjectCard details={ProjectArtemis} />
+    <ProjectCard details={ProjectArtemis} flipped={true} />
     
    </StyledPage>);
 }

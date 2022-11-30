@@ -12,7 +12,7 @@ import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { IceColourPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
-import { ParagraphText } from '../projects/project-card';
+import { ParagraphText } from '../../../library/styleLibrary';
 
 const SkillsSection = () => {
 
@@ -26,19 +26,22 @@ const SkillsSection = () => {
     <Row>
         <StyledIconCol>
             <SkillIcon imgRef={cSharpIcon} altText="C#" />
-            <SkillIcon imgRef={javascriptIcon} altText="C#" />
-            <SkillIcon imgRef={visualStudioIcon} altText="C#" />
-            <SkillIcon imgRef={unityIcon} altText="C#" />
-            <SkillIcon imgRef={reactIcon} altText="C#" />
-            <SkillIcon imgRef={gitHubIcon} altText="C#" />
-            <SkillIcon imgRef={firebaseIcon} altText="C#" />
-            <SkillIcon imgRef={npmIcon} altText="C#" />     
+            <SkillIcon imgRef={javascriptIcon} altText="Javascript" />
+            <SkillIcon imgRef={visualStudioIcon} altText="Visual Studio" />
+            <SkillIcon imgRef={unityIcon} altText="Unity" />
+            <SkillIcon imgRef={reactIcon} altText="React" />
+            <SkillIcon imgRef={gitHubIcon} altText="Github" />
+            <SkillIcon imgRef={firebaseIcon} altText="Firebase" />
+            <SkillIcon imgRef={npmIcon} altText="NPM" />     
         </StyledIconCol>  
     </Row>
     <br />
     <Row>
         <Col>
-            <ParagraphText>Text blurb here about my experience and what I have done during my professional/personal career</ParagraphText>
+            <ParagraphText centered={true}>
+                I have been in professional full stack development for 2 years. The technologies and projects I have worked on include
+                Unity WebGL/Android games and React/Firebase websites. I also have experience with Express/Node.JS and MongoDB.
+            </ParagraphText>
         </Col>
     </Row>
 </InfoSection>);

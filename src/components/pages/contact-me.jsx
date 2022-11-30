@@ -1,19 +1,19 @@
 import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
+import { Col, Row, Button } from 'reactstrap';
 import styled from 'styled-components';
+import { CenteredTitle, InfoSection, ParagraphText, SecondaryText } from '../../library/styleLibrary';
 
 const ContactMe = () => {
 
-   return (<React.Fragment>
-    <Container>
+   return (<InfoSection padding="200px">
         <Row>
             <Col>
-                <h1>Contact me information here</h1>
-                <h2>I need to determine if I want to give out my phone number or just email (Likely email)</h2>
+                <CenteredTitle>Contact me information here</CenteredTitle>
+                <ParagraphText>I am currently looking for work! Should you have any opportunities for me please dont hesitate to send me an email about any opportunities.</ParagraphText>
+                <Button onClick={(e) => {window.location.href = "mailto:hamishharrison@hotmail.com";
+                e.preventDefault();}}>Email Me</Button>
             </Col>
         </Row>
-    </Container>
-
-   </React.Fragment>);
+   </InfoSection>);
 }
 export default ContactMe;

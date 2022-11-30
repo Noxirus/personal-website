@@ -2,14 +2,14 @@ import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
 import ProjectCard from '../projects/project-card';
 import { 
-    TeamUnbreakable, 
     PipePuzzles, 
-    AbandonShip, 
-} from '../../../library/portfolioLibrary';
+    AbandonShip,
+    HIMALAYASTrial, 
+} from '../../../library/projectLibrary';
 
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 
-const PortfolioSection = () => {
+const ProjectSection = () => {
 
    return (<InfoSection padding="250px">
     <Row>
@@ -20,9 +20,9 @@ const PortfolioSection = () => {
     <br />
     
     <ProjectCard details={PipePuzzles} />
-    <ProjectCard details={AbandonShip} />
-    <ProjectCard details={TeamUnbreakable} />
+    <ProjectCard details={AbandonShip} flipped={true} />
+    <ProjectCard details={HIMALAYASTrial} />
     <Button onClick={() => window.open("/projects", "_self")}>See more projects</Button>
 </InfoSection>);
 }
-export default PortfolioSection;
+export default ProjectSection;

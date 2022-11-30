@@ -29,7 +29,6 @@ const NavigationBar = (args) => {
         <StyledNavlink>Projects</StyledNavlink>
         
         <StyledNavlink href="/contact-me">Contact Me</StyledNavlink>
-        <NavbarText>Inspring text here?</NavbarText>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
         <SocialMediaIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
