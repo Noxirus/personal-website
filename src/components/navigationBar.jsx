@@ -53,8 +53,9 @@ const StyledNavlink = styled(NavLink)`
 
 const StyledNavbar = styled(Navbar)`
   padding: 25px;
-  position: fixed;
   background-color: white;
   width: 100%;
-  box-shadow: 0px 5px #C0C0C0;
+  box-shadow: 0px 2px #C0C0C0;
+  position: fixed;
+  z-index:1;
 `

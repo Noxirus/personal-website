@@ -11,6 +11,7 @@ import {
     FinalVerdict, 
     ProjectArtemis 
 } from '../../../library/projectLibrary';
+import { CenteredTitle } from '../../../library/styleLibrary';
 import ProjectCard from './project-card';
 
 const ProjectPage = () => {
@@ -18,11 +19,11 @@ const ProjectPage = () => {
    return (<StyledPage>
     <Row>
         <Col>
-            <h1>Hamish Harrison's Project Archive</h1>
+            <CenteredTitle>Hamish Harrison's Project Archive</CenteredTitle>
         </Col>
     </Row>
     <ProjectCard details={PipePuzzles} />
-    <ProjectCard details={TheWilfredEscape} flipped={true} />
+    <ProjectCard details={TheWilfredEscape} flipped={true} screenSize={window.innerWidth} />
     <ProjectCard details={AbandonShip} />
     <ProjectCard details={FinalVerdict} flipped={true} />
     <ProjectCard details={TeamUnbreakable} />

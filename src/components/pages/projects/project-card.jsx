@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row} from 'reactstrap';
+import { Row } from 'reactstrap';
 import styled from 'styled-components';
 import { IceColourPalette } from '../../../library/colorPalette';
 import CardDetails from './card-details';
@@ -8,7 +8,7 @@ import CardImage from './card-image';
 const ProjectCard = ({details, flipped}) => {
 
    return (<StyledCard>
-    {flipped ? 
+    {(flipped && window.innerWidth > 1000) ? //TODO this doesn't change dynamically, only on page refresh
       <React.Fragment><CardImage details={details} /><CardDetails details={details}/></React.Fragment> : 
       <React.Fragment><CardDetails details={details}/><CardImage details={details} /></React.Fragment>
     }
