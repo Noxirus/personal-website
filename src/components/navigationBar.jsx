@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import {
   Collapse,
@@ -12,6 +11,8 @@ import {
 import styled from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { ColourPalette } from '../library/colorPalette';
+import { SocialMediaIcon } from '../library/styleLibrary';
+import Resume from "../../src/library/Hamish Harrison Resume.pdf";
 
 const NavigationBar = (args) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ const NavigationBar = (args) => {
         <StyledNavlink>Projects</StyledNavlink>
         
         <StyledNavlink href="/contact-me">Contact</StyledNavlink>
+        <StyledNavlink onClick={() => window.open(Resume)}>Resume</StyledNavlink>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
         <SocialMediaIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
@@ -49,17 +51,6 @@ const StyledNavbarText = styled(NavbarText)`
   color: ${ColourPalette.dark}
 `
 
-const SocialMediaIcon = styled(FontAwesomeIcon)`
-  min-width: 50px;
-  &:hover{
-    cursor: pointer;
-    color: ${ColourPalette.primary}
-    //TODO add on hover animation and press here
-  }
-  color: ${ColourPalette.dark}
-
-`
-
 const StyledNavlink = styled(NavLink)`
 &:hover{
   cursor: pointer;
@@ -68,7 +59,9 @@ const StyledNavlink = styled(NavLink)`
 }
 
 padding-right: 50px;
-  font-size: clamp(15px, 3vw, 20px);
+padding-bottom: 5px;
+padding-top: 5px;
+  font-size: clamp(20px, 3vw, 20px);
   color: ${ColourPalette.dark}
 
 

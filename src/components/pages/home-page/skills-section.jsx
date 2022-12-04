@@ -13,6 +13,7 @@ import npmIcon from "../../../Images/Icons/node-js.svg";
 import { IceColourPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 import { ParagraphText } from '../../../library/styleLibrary';
+import Resume from "../../../library/Hamish Harrison Resume.pdf";
 
 const SkillsSection = () => {
 
@@ -40,7 +41,8 @@ const SkillsSection = () => {
         <Col>
             <ParagraphText centered={true}>
                 I have been in professional full stack development for 2 years. The technologies and projects I have worked on include
-                Unity WebGL/Android games and React/Firebase websites. I also have experience with Express/Node.JS and MongoDB.
+                Unity WebGL/Android games and React/Firebase websites. I also have experience with Express/Node.JS and MongoDB. You can view
+                more information via my resume <a href={Resume} target="_blank">here</a>.
             </ParagraphText>
         </Col>
     </Row>

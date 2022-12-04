@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ColourPalette } from './colorPalette';
 import { Container, Button } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const PrimaryText = styled.h1`
 font-size: clamp(40px, 8vw, 80px);
@@ -40,4 +41,16 @@ font-size: clamp(10px, 4vw, 25px);
 color: ${ColourPalette.dark};
 border-color: ${ColourPalette.secondary};
 background-color: ${ColourPalette.tertiary};
+`
+
+
+export const SocialMediaIcon = styled(FontAwesomeIcon)`
+  min-width: 50px;
+  &:hover{
+    cursor: pointer;
+    color:  ${ColourPalette.primary}
+    //TODO add on hover animation and press here
+  }
+  color: ${props => props.color ? props.color : ColourPalette.dark}
+
 `
