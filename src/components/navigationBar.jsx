@@ -26,9 +26,9 @@ const NavigationBar = (args) => {
         <Nav className="me-auto" navbar />
 
         {/*Smooth scroll for these links */}
-        <StyledNavlink>About</StyledNavlink>
-        <StyledNavlink>Experience</StyledNavlink>
         <StyledNavlink>Projects</StyledNavlink>
+        <StyledNavlink>Experience</StyledNavlink>
+        <StyledNavlink>About</StyledNavlink>
         
         <StyledNavlink href="/contact-me">Contact</StyledNavlink>
         <StyledNavlink onClick={() => window.open(Resume)}>Resume</StyledNavlink>

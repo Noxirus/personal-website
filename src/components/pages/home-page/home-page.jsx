@@ -6,14 +6,16 @@ import SkillsSection from './skills-section';
 import { InfoSection } from '../../../library/styleLibrary';
 import ProjectSection from './project-section';
 import ContactMe from '../contact-me';
+import IntroductionSection from './introduction-section';
 
 
 const HomePage = () => {
 
    return (<BackgroundDiv>
-    <AboutSection />
+      <IntroductionSection />
     <ProjectSection />
     <SkillsSection />
+    <AboutSection />
     
     {/* <BlogSection /> */}
     <ContactMe />
