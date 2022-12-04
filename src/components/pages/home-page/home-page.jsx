@@ -12,8 +12,9 @@ const HomePage = () => {
 
    return (<BackgroundDiv>
     <AboutSection />
-    <SkillsSection />
     <ProjectSection />
+    <SkillsSection />
+    
     {/* <BlogSection /> */}
     <ContactMe />
     {/*Social media at the bottom? */}

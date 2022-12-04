@@ -11,14 +11,15 @@ import {
 } from 'reactstrap';
 import styled from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { ColourPalette } from '../library/colorPalette';
 
 const NavigationBar = (args) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-   return ( <div>
+   return (
     <StyledNavbar expand="md" {...args}>
-      <NavbarBrand href="/">Hamish Harrison</NavbarBrand>
+      <StyledNavBrand href="/">Hamish Harrison<br /><StyledNavbarText>Full Stack Developer</StyledNavbarText></StyledNavBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar />
@@ -28,34 +29,56 @@ const NavigationBar = (args) => {
         <StyledNavlink>Experience</StyledNavlink>
         <StyledNavlink>Projects</StyledNavlink>
         
-        <StyledNavlink href="/contact-me">Contact Me</StyledNavlink>
+        <StyledNavlink href="/contact-me">Contact</StyledNavlink>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
         <SocialMediaIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
     </StyledNavbar>
-  </div>);
+  );
 }
 
 export default NavigationBar;
 
+const StyledNavBrand = styled(NavbarBrand)`
+  font-size: clamp(25px, 3vw, 30px);
+  color: ${ColourPalette.primary}
+`
+
+const StyledNavbarText = styled(NavbarText)`
+  font-size: clamp(20px, 3vw, 25px);
+  color: ${ColourPalette.dark}
+`
+
 const SocialMediaIcon = styled(FontAwesomeIcon)`
   min-width: 50px;
-
   &:hover{
     cursor: pointer;
+    color: ${ColourPalette.primary}
     //TODO add on hover animation and press here
   }
+  color: ${ColourPalette.dark}
+
 `
 
 const StyledNavlink = styled(NavLink)`
-  padding-right: 50px;
+&:hover{
+  cursor: pointer;
+  color: ${ColourPalette.primary};
+  text-decoration: underline;
+}
+
+padding-right: 50px;
+  font-size: clamp(15px, 3vw, 20px);
+  color: ${ColourPalette.dark}
+
+
 `
 
 const StyledNavbar = styled(Navbar)`
-  padding: 25px;
-  background-color: white;
+  padding: 10px;
+  background-color: ${ColourPalette.tertiary};
   width: 100%;
-  box-shadow: 0px 2px #C0C0C0;
+  box-shadow: 0px 2px ${ColourPalette.primary};
   position: fixed;
   z-index:1;
 `

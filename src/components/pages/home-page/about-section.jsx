@@ -8,12 +8,11 @@ const AboutSection = () => {
    return (<InfoSection padding="300px">
     <Row>
         <Col xl="6" md="12">
-            <PrimaryText fontSize="4em">Hamish Harrison</PrimaryText>
-            <SecondaryText fontSize="3em">Building fun and interesting things</SecondaryText>
-            <ParagraphText fontSize="1.5em">
-                My name is Hamish Harrison and I am a professional software and web developer. 
-                From building games to making websites I am happy to challenge the next big project!
-            </ParagraphText>
+            
+            <SecondaryText>Hello! I am</SecondaryText>
+            <PrimaryText>Hamish,</PrimaryText>
+            <SecondaryText>Full Stack Developer</SecondaryText>
+                
         </Col>
         <Col>
             <PersonalImage alt="Me working here" src="https://picsum.photos/630/300" />

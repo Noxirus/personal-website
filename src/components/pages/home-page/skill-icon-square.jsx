@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IceColourPalette } from '../../../library/colorPalette';
+import { ColourPalette } from '../../../library/colorPalette';
 
 const SkillIcon = ({imgRef, altText}) => {
 
@@ -20,5 +20,5 @@ min-height: 50px;
 margin: 5px;
 padding: 5px;
 background-color: white;
-border-color: ${IceColourPalette.primary} ${IceColourPalette.secondary} ${IceColourPalette.grey}
+border-color: ${ColourPalette.primary} ${ColourPalette.secondary} ${ColourPalette.grey}
 `

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button, Row, Col} from 'reactstrap';
 import styled from 'styled-components';
-import { IceColourPalette } from '../../../library/colorPalette';
+import { ColourPalette } from '../../../library/colorPalette';
 
 const BlogCard = ({details, index}) => {
 
@@ -32,11 +32,11 @@ export default BlogCard;
 
 const Title = styled.h1`
 font-size: clamp(20px, 3vw, 30px);
-color: ${IceColourPalette.primary};
+color: ${ColourPalette.primary};
 `
 const SecondaryText = styled.h2`
 font-size: clamp(15px, 2vw, 20px);
-color: ${IceColourPalette.grey};
+color: ${ColourPalette.grey};
 `
 
 //TODO make this wider, maybe takes up the middle of the page for each article card?

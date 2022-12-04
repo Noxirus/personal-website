@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row } from 'reactstrap';
 import styled from 'styled-components';
-import { IceColourPalette } from '../../../library/colorPalette';
+import { ColourPalette } from '../../../library/colorPalette';
 import CardDetails from './card-details';
 import CardImage from './card-image';
 
@@ -25,7 +25,7 @@ const StyledCard = styled(Row)`
   border-radius: 15px;
   padding: 15px;
   
-  border-color: ${IceColourPalette.primary} ${IceColourPalette.secondary} ${IceColourPalette.grey}
+  border-color: ${ColourPalette.primary} ${ColourPalette.secondary} ${ColourPalette.grey}
 `
 
 

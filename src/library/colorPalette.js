@@ -1,7 +1,8 @@
-export const IceColourPalette ={
-    primary: "#d4f1f9",
-    secondary: "#9ed8f0",
-    dark: "#1a2653",
-    grey: "#E0E0E0",
+export const ColourPalette ={
+    primary: "#FFA101",
+    secondary: "#FAE6B1",
+    tertiary: "#B3DEE5",
+    dark: "#31525B",
+    grey: "#1d1d1d",
     black: "#000000"
 }
