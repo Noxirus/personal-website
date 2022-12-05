@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import {
   Collapse,
   Navbar,
@@ -26,10 +27,10 @@ const NavigationBar = (args) => {
         <Nav className="me-auto" navbar />
 
         {/*Smooth scroll for these links */}
-        <StyledNavlink>Projects</StyledNavlink>
-        <StyledNavlink>Experience</StyledNavlink>
-        <StyledNavlink>About</StyledNavlink>
-        <StyledNavlink>Contact</StyledNavlink>
+        <StyledNavlink to="projects" spy={true} smooth={true} offset={80} duration={500}>Projects</StyledNavlink>
+        <StyledNavlink to="experience" spy={true} smooth={true} offset={80} duration={500}>Experience</StyledNavlink>
+        <StyledNavlink to="about" spy={true} smooth={true} offset={80} duration={500}>About</StyledNavlink>
+        <StyledNavlink to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact</StyledNavlink>
         
         <StyledNavlink onClick={() => window.open(Resume)}>Resume</StyledNavlink>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
@@ -51,13 +52,13 @@ const StyledNavbarText = styled(NavbarText)`
   color: ${ColourPalette.black}
 `
 
-const StyledNavlink = styled(NavLink)`
+const StyledNavlink = styled(Link)`
 &:hover{
   cursor: pointer;
   color: ${ColourPalette.primary};
   text-decoration: underline;
 }
-
+text-decoration: none;
 padding-right: 50px;
 padding-bottom: 5px;
 padding-top: 5px;

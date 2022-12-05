@@ -11,7 +11,7 @@ import { CenteredTitle, InfoSection, StyledButton } from '../../../library/style
 
 const ProjectSection = () => {
 
-   return (<InfoSection padding="250px">
+   return (<InfoSection id="projects" padding="250px">
     <Row>
         <Col>
             <CenteredTitle>Projects I have worked on</CenteredTitle>

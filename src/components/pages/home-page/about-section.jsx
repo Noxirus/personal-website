@@ -7,7 +7,7 @@ import Headshot from "../../../Images/HamishHeadshot.png";
 
 const AboutSection = () => {
 
-   return (<InfoSection padding="250px">
+   return (<InfoSection id="about" padding="250px">
     <Row>
         <Col>
             <CenteredTitle>About</CenteredTitle>

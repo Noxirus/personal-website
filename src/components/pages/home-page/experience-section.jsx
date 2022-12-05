@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
-import SkillIcon from './skill-icon-square';
+import SkillIcon from './skill-icon';
 import cSharpIcon from '../../../Images/Icons/c-sharp-c.svg';
 import unityIcon from "../../../Images/Icons/unity-3d.svg";
 import javascriptIcon from "../../../Images/Icons/javascript-js.svg";
@@ -10,14 +10,14 @@ import firebaseIcon from "../../../Images/Icons/file-type-firebase.svg";
 import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
-import { ColourPalette, IceColourPalette } from '../../../library/colorPalette';
+import { ColourPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 import { ParagraphText } from '../../../library/styleLibrary';
 import Resume from "../../../library/Hamish Harrison Resume.pdf";
 
-const SkillsSection = () => {
+const ExperienceSection = () => {
 
-   return (     <InfoSection padding="300px">
+   return (<InfoSection id="experience" padding="300px">
     <Row>
         <Col>
             <CenteredTitle>Experience</CenteredTitle>
@@ -55,7 +55,7 @@ const SkillsSection = () => {
     </Row>
 </InfoSection>);
 }
-export default SkillsSection;
+export default ExperienceSection;
 
 const StyledListItem = styled.li`
 font-size: clamp(10px, 4vw, 25px);

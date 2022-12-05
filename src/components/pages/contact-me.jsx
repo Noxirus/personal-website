@@ -1,11 +1,10 @@
 import React from 'react';
-import { Col, Row, Button } from 'reactstrap';
-import styled from 'styled-components';
-import { CenteredTitle, InfoSection, ParagraphText, SecondaryText, StyledButton } from '../../library/styleLibrary';
+import { Col, Row } from 'reactstrap';
+import { CenteredTitle, InfoSection, ParagraphText, StyledButton } from '../../library/styleLibrary';
 
 const ContactMe = () => {
 
-   return (<InfoSection padding="200px">
+   return (<InfoSection id="contact" padding="200px">
         <Row>
             <Col>
                 <CenteredTitle>Contact me</CenteredTitle>
