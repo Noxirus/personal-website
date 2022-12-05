@@ -18,16 +18,14 @@ function App() {
     <React.Fragment>
       <NavigationBar />
       <BackgroundDiv />
-      <BrowserRouter>
         <Routes>
-          <Route path="/blog" element={<BlogArchives />} />
-          <Route path="/blog/:id" element={<BlogView/>} />
-          <Route path="/contact-me" element={<ContactMe />} />
+          <Route path="/#/blog" element={<BlogArchives />} />
+          <Route path="/#/blog/:id" element={<BlogView/>} />
+          <Route path="/#/contact-me" element={<ContactMe />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route exact path="/" element={<HomePage />}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
     </React.Fragment>
   );

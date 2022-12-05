@@ -14,7 +14,7 @@ const IntroductionSection = () => {
             <SecondaryText>Hello! I am</SecondaryText>
             <PrimaryText>Hamish,</PrimaryText>
             <SecondaryText>Full Stack Developer</SecondaryText>
-            <ParagraphText>Currently looking for opportunitites!</ParagraphText>
+            <ParagraphText>Currently looking for opportunities!</ParagraphText>
                 
         </StyledAboutCol>
         <Col>
@@ -28,14 +28,6 @@ const StyledAboutCol = styled(Col)`
 
 margin: auto;
 
-`
-
-const PersonalImage = styled.img`
-width: 80%;
-text-align: center;
-background-repeat: no-repeat;
-background-size: contain;
-border: 2px solid ${ColourPalette.tertiary};
 `
 
 export const ParagraphText = styled.p`

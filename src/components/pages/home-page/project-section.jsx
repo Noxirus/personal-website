@@ -22,7 +22,7 @@ const ProjectSection = () => {
     <ProjectCard details={PipePuzzles} />
     <ProjectCard details={AbandonShip} flipped={true} />
     <ProjectCard details={HIMALAYASTrial} />
-    <StyledButton onClick={() => window.open("/projects", "_self")}>See more projects</StyledButton>
+    <StyledButton onClick={() => window.open("/#/projects", "_self")}>See more projects</StyledButton>
 </InfoSection>);
 }
 export default ProjectSection;
