@@ -24,7 +24,7 @@ const StyledCard = styled(Row)`
   margin: 15px;
   border-radius: 15px;
   padding: 15px;
-  
+  background-color: ${ColourPalette.tertiary};
   border-color: ${ColourPalette.primary} ${ColourPalette.secondary} ${ColourPalette.grey}
 `
 

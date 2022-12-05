@@ -1,8 +1,11 @@
+import TeamUnbreakableImage from "../Images/TeamUnbreakable.png";
+import HIMALAYASImage from "../Images/HIMALAYAS.png";
+
 export const TeamUnbreakable = {
     title: "Team Unbreakable",
     tech: "React, CSS, HTML, Firebase",
     roles: "web developer",
-    img: "Imgrefhere?",
+    img: TeamUnbreakableImage,
     link: "https://www.teamunbreakable.ca/",
     description: "CSS update to the websites aesthetics",
 }
@@ -11,7 +14,7 @@ export const HIMALAYASTrial = {
     title: "HIMALAYAS Trial",
     tech: "React, CSS, HTML, Firebase",
     roles: "web developer",
-    img: "Imgrefhere?",
+    img: HIMALAYASImage,
     link: "https://himalayastrial.ca/",
     description: "Website made from the ground up using React. Utilizes features from Firebase in order to handle messaging services along with partner matching based on filters. " + 
     "Contains an administrative backend for handling web page content as well as ticket handling/feedback.",

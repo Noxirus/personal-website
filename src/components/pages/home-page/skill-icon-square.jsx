@@ -5,7 +5,7 @@ import { ColourPalette } from '../../../library/colorPalette';
 const SkillIcon = ({imgRef, altText}) => {
 
    return (
-       <IconImage src= {imgRef} alt = {altText} />);
+       <IconImage title={altText} src= {imgRef} alt = {altText} />);
 }
 export default SkillIcon;
 

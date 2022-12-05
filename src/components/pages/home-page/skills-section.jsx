@@ -10,7 +10,7 @@ import firebaseIcon from "../../../Images/Icons/file-type-firebase.svg";
 import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
-import { IceColourPalette } from '../../../library/colorPalette';
+import { ColourPalette, IceColourPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 import { ParagraphText } from '../../../library/styleLibrary';
 import Resume from "../../../library/Hamish Harrison Resume.pdf";
@@ -40,15 +40,27 @@ const SkillsSection = () => {
     <Row>
         <Col>
             <ParagraphText centered={true}>
-                I have been in professional full stack development for 2 years. The technologies and projects I have worked on include
-                Unity WebGL/Android games and React/Firebase websites. I also have experience with Express/Node.JS and MongoDB. You can view
-                more information via my resume <a href={Resume} target="_blank">here</a>.
+                I have been in professional full stack development for 2 years. The technologies I have primarily worked on include: 
+            </ParagraphText>
+            <ul>
+                <StyledListItem>Unity WebGL/Android games utilizing: C#, Authentication services, Google Play Console, Google Admob Monetization.</StyledListItem>
+                <StyledListItem>Websites utilzing React, Firebase, Firestore, Javascript, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
+            </ul>
+                
+                
+            <ParagraphText>
+                You can view more information via my resume <a href={Resume} target="_blank">here</a>.
             </ParagraphText>
         </Col>
     </Row>
 </InfoSection>);
 }
 export default SkillsSection;
+
+const StyledListItem = styled.li`
+font-size: clamp(10px, 4vw, 25px);
+color: ${ColourPalette.tertiary};
+`
 
 const StyledIconCol = styled(Col)`
 margin-left:auto;

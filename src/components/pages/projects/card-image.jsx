@@ -8,7 +8,7 @@ const CardImage = ({details}) => {
    return ( <ImageCol xl="5" lg="6" sm="12">
    {details.img == "" ? <VideoEmbed videoUrl={details.videoUrl} /> : <ProjectImage
      alt={details.description}
-     src="https://picsum.photos/400/200" //TODO add image ref here
+     src={details.img} //TODO add image ref here
    />} 
    </ImageCol>);
 }

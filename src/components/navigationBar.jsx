@@ -29,8 +29,8 @@ const NavigationBar = (args) => {
         <StyledNavlink>Projects</StyledNavlink>
         <StyledNavlink>Experience</StyledNavlink>
         <StyledNavlink>About</StyledNavlink>
+        <StyledNavlink>Contact</StyledNavlink>
         
-        <StyledNavlink href="/contact-me">Contact</StyledNavlink>
         <StyledNavlink onClick={() => window.open(Resume)}>Resume</StyledNavlink>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
         <SocialMediaIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
@@ -48,7 +48,7 @@ const StyledNavBrand = styled(NavbarBrand)`
 
 const StyledNavbarText = styled(NavbarText)`
   font-size: clamp(20px, 3vw, 25px);
-  color: ${ColourPalette.dark}
+  color: ${ColourPalette.black}
 `
 
 const StyledNavlink = styled(NavLink)`
