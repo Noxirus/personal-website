@@ -18,17 +18,19 @@ const AboutSection = () => {
         <StyledAboutCol xl="6" md="12">
             <ParagraphText>
                 My name is Hamish and I love building software. Originally studied Linguistics with a Musical Minor at the University of Calgary.
-                After a few years of Administrative assistant work I decided I wanted a career change. Since then I have been building projects using the Unity engine
-                and websites using React/Node.JS/MongoDB.
+                After a few years of Administrative assistant work I decided I wanted a career change. 
             </ParagraphText>
             <ParagraphText>
-                In my free time I have been learning new technologies involving the Unreal Engine/C++, Typescript and 3D modelling using Blender.
-                Looking forward to seeing the differences between the two major Engines.
+                I attended the Object Oriented Software Development track program at SAIT. During that time I learned: C#, Javascript, HTML, CSS, Java, Android Studio, SQL Server,
+                OracleDB, Python, Raspberry Pi, VMWare along with security best practices.
             </ParagraphText>
-                
+            <ParagraphText>
+                In my recent free time I have been learning new technologies involving the Unreal Engine/C++, Typescript and 3D modelling using Blender.
+                Looking forward to seeing the differences between the two major Engines.
+            </ParagraphText>      
         </StyledAboutCol>
         <Col>
-            <PersonalImage alt="Me working here" src={Headshot} />
+            <PersonalImage alt="Hamish Harrison" src={Headshot} />
         </Col>
     </Row>
 </InfoSection>);
