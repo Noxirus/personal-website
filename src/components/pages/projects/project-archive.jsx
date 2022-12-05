@@ -9,7 +9,9 @@ import {
     AbandonShip, 
     OmegaProtocol, 
     FinalVerdict, 
-    ProjectArtemis 
+    ProjectArtemis,
+    HamlicksWebsite,
+    GymnasticTrial
 } from '../../../library/projectLibrary';
 import { CenteredTitle } from '../../../library/styleLibrary';
 import ProjectCard from './project-card';
@@ -19,7 +21,7 @@ const ProjectPage = () => {
    return (<StyledPage>
     <Row>
         <Col>
-            <CenteredTitle>Hamish Harrison's Project Archive</CenteredTitle>
+            <CenteredTitle>Project Archive</CenteredTitle>
         </Col>
     </Row>
     <ProjectCard details={PipePuzzles} />
@@ -30,6 +32,8 @@ const ProjectPage = () => {
     <ProjectCard details={HIMALAYASTrial} flipped={true} />
     <ProjectCard details={OmegaProtocol} />
     <ProjectCard details={ProjectArtemis} flipped={true} />
+    <ProjectCard details={GymnasticTrial} />
+    <ProjectCard details={HamlicksWebsite} flipped={true} />
     
    </StyledPage>);
 }

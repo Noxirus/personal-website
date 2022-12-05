@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link} from 'react-scroll';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavLink,
   NavbarText,
 } from 'reactstrap';
 import styled from 'styled-components';
@@ -27,12 +26,12 @@ const NavigationBar = (args) => {
         <Nav className="me-auto" navbar />
 
         {/*Smooth scroll for these links */}
-        <StyledNavlink to="projects" spy={true} smooth={true} offset={80} duration={500}>Projects</StyledNavlink>
-        <StyledNavlink to="experience" spy={true} smooth={true} offset={80} duration={500}>Experience</StyledNavlink>
-        <StyledNavlink to="about" spy={true} smooth={true} offset={80} duration={500}>About</StyledNavlink>
-        <StyledNavlink to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact</StyledNavlink>
+        <StyledNavlink to="projects" spy={true} smooth={true} offset={80} duration={200}>Projects</StyledNavlink>
+        <StyledNavlink to="experience" spy={true} smooth={true} offset={80} duration={200}>Experience</StyledNavlink>
+        <StyledNavlink to="about" spy={true} smooth={true} offset={80} duration={200}>About</StyledNavlink>
+        <StyledNavlink to="contact" spy={true} smooth={true} offset={50} duration={200}>Contact</StyledNavlink>
         
-        <StyledNavlink onClick={() => window.open(Resume)}>Resume</StyledNavlink>
+        <StyledNavlink to="" onClick={() => window.open(Resume)}>Resume</StyledNavlink>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
         <SocialMediaIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
@@ -43,13 +42,19 @@ const NavigationBar = (args) => {
 export default NavigationBar;
 
 const StyledNavBrand = styled(NavbarBrand)`
-  font-size: clamp(25px, 3vw, 30px);
-  color: ${ColourPalette.primary}
+&:hover{
+  text-shadow: 2px 2px ${ColourPalette.secondary};
+}
+
+font-size: clamp(25px, 3vw, 30px);
+  color: ${ColourPalette.primary};
+  text-shadow: 2px 2px ${ColourPalette.dark};
 `
 
 const StyledNavbarText = styled(NavbarText)`
   font-size: clamp(20px, 3vw, 25px);
-  color: ${ColourPalette.black}
+  color: ${ColourPalette.black};
+  text-shadow: 0px 0px;
 `
 
 const StyledNavlink = styled(Link)`
@@ -70,7 +75,7 @@ padding-top: 5px;
 
 const StyledNavbar = styled(Navbar)`
   padding: 10px;
-  background-color: ${ColourPalette.tertiary};
+  background-color: white;
   width: 100%;
   box-shadow: 0px 2px ${ColourPalette.primary};
   position: fixed;

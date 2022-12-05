@@ -25,7 +25,8 @@ const StyledCard = styled(Row)`
   border-radius: 15px;
   padding: 15px;
   background-color: ${ColourPalette.tertiary};
-  border-color: ${ColourPalette.primary} ${ColourPalette.secondary} ${ColourPalette.grey}
+  border-color: ${ColourPalette.primary} ${ColourPalette.secondary} ${ColourPalette.grey};
+  box-shadow: 3px 3px ${ColourPalette.secondary};
 `
 
 
