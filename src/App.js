@@ -26,11 +26,10 @@ function App() {
 
 export default App;
 
-//Add static background? Do I want a background?
 const BackgroundDiv = styled.div`
-    background-color: ${ColourPalette.dark};
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:-5;
+background-color: ${ColourPalette.dark};
+width:100%;
+height:100%;
+position:fixed;
+z-index:-5;
 `

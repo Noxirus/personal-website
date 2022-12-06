@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import ProjectCard from '../projects/project-card';
 import { 
     PipePuzzles, 
@@ -16,18 +16,18 @@ const OpenProjectArchive = () => {
 
 const ProjectSection = () => {
 
-   return (<InfoSection id="projects" padding="250px">
-    <Row>
-        <Col>
-            <CenteredTitle>Projects I have worked on</CenteredTitle>
-        </Col>
-    </Row>
-    <br />
-    
-    <ProjectCard details={PipePuzzles} />
-    <ProjectCard details={AbandonShip} flipped={true} />
-    <ProjectCard details={HIMALAYASTrial} />
-    <StyledButton onClick={() => OpenProjectArchive()}>See more projects</StyledButton>
-</InfoSection>);
+   return (
+   <InfoSection id="projects" padding="250px">
+        <Row>
+            <Col>
+                <CenteredTitle>Projects I have worked on</CenteredTitle>
+            </Col>
+        </Row>
+        <br />
+        <ProjectCard details={PipePuzzles} />
+        <ProjectCard details={AbandonShip} flipped={true} />
+        <ProjectCard details={HIMALAYASTrial} />
+        <StyledButton onClick={() => OpenProjectArchive()}>See more projects</StyledButton>
+    </InfoSection>);
 }
 export default ProjectSection;

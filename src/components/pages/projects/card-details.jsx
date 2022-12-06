@@ -31,20 +31,20 @@ const SecondaryText = styled.h2`
 font-size: clamp(15px, 2vw, 20px);
 color: ${ColourPalette.primary};
 `
+
 const ParagraphText = styled.p`
 font-size: clamp(10px, 4vw, 25px);
 color: ${ColourPalette.dark};
-
 text-align: ${props => props.centered ? "center" : ""};
 `
 
 const PopOutIcon = styled(FontAwesomeIcon)`
-  min-width: 50px;
-  margin-left: 10px;
-
-  &:hover{
-    cursor: pointer;
-  }
+min-width: 50px;
+margin-left: 10px;
+&:hover{
+  cursor: pointer;
+  color: ${ColourPalette.primary}
+}
 `
 
 const TextCol = styled(Col)`

@@ -7,6 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavbarText,
+  NavItem,
 } from 'reactstrap';
 import styled from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -26,12 +27,12 @@ const NavigationBar = (args) => {
         <Nav className="me-auto" navbar />
 
         {/*Smooth scroll for these links */}
-        <StyledNavlink to="projects" spy={true} smooth={true} offset={80} duration={200}>Projects</StyledNavlink>
-        <StyledNavlink to="experience" spy={true} smooth={true} offset={80} duration={200}>Experience</StyledNavlink>
-        <StyledNavlink to="about" spy={true} smooth={true} offset={80} duration={200}>About</StyledNavlink>
-        <StyledNavlink to="contact" spy={true} smooth={true} offset={50} duration={200}>Contact</StyledNavlink>
+        <StyledNavItem><StyledNavlink to="projects" spy={true} smooth={true} offset={80} duration={200}>Projects</StyledNavlink></StyledNavItem>
+        <StyledNavItem><StyledNavlink to="experience" spy={true} smooth={true} offset={80} duration={200}>Experience</StyledNavlink></StyledNavItem>
+        <StyledNavItem><StyledNavlink to="about" spy={true} smooth={true} offset={80} duration={200}>About</StyledNavlink></StyledNavItem>
+        <StyledNavItem><StyledNavlink to="contact" spy={true} smooth={true} offset={50} duration={200}>Contact</StyledNavlink></StyledNavItem>
         
-        <StyledNavlink to="" onClick={() => window.open(Resume)}>Resume</StyledNavlink>
+        <StyledNavItem><StyledNavlink to="" onClick={() => window.open(Resume)}>Resume</StyledNavlink></StyledNavItem>
         <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
         <SocialMediaIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
@@ -40,6 +41,10 @@ const NavigationBar = (args) => {
 }
 
 export default NavigationBar;
+
+const StyledNavItem = styled(NavItem)`
+list-style-type: none;  
+`
 
 const StyledNavBrand = styled(NavbarBrand)`
 &:hover{
@@ -74,7 +79,7 @@ padding-top: 5px;
 `
 
 const StyledNavbar = styled(Navbar)`
-  padding: 10px;
+  padding: 0px;
   background-color: white;
   width: 100%;
   box-shadow: 0px 2px ${ColourPalette.primary};

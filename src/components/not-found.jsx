@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import styled from 'styled-components';
 
 const NotFound = () => {
 

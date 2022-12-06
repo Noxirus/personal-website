@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import { ColourPalette } from '../../../library/colorPalette';
-import { CenteredTitle, InfoSection, PrimaryText, SecondaryText } from '../../../library/styleLibrary';
+import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 import Headshot from "../../../Images/HamishHeadshot.png";
 
 const AboutSection = () => {
@@ -43,27 +43,21 @@ const AboutSection = () => {
 export default AboutSection;
 
 const StyledAboutCol = styled(Col)`
-
 margin: auto;
-
 `
 
 const StyledImageCol = styled(Col)`
 display: flex;
-
 `
 
 const PersonalImage = styled.img`
 width: 80%;
 margin:0 auto;
-
-
 background-size: contain;
 border: 2px solid ${ColourPalette.tertiary};
 `
 
-export const ParagraphText = styled.p`
+const ParagraphText = styled.p`
 font-size: clamp(10px, 4vw, 18px);
 color: ${ColourPalette.tertiary};
 `
-//TODO this padding on top needs to get smaller based on screen size

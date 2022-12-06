@@ -15,13 +15,13 @@ const CardImage = ({details}) => {
 export default CardImage;
 
 const ProjectImage = styled.img`
-  width:100%;
-  height:100%;
-  object-fit:cover;
+width:100%;
+height:100%;
+object-fit:cover;
 
-  &:hover{
-    cursor: pointer;
-  }
+&:hover{
+  cursor: pointer;
+}
 `
 
 const ImageCol = styled(Col)`

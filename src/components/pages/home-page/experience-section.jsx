@@ -46,8 +46,6 @@ const ExperienceSection = () => {
                 <StyledListItem>Unity WebGL/Android games utilizing: C#, Authentication services, Google Play Console, Google Admob Monetization.</StyledListItem>
                 <StyledListItem>Websites utilzing React, Firebase, Firestore, Javascript, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
             </ul>
-                
-                
             <ParagraphText>
                 You can view more information via my resume <a href={Resume} target="_blank">here</a>.
             </ParagraphText>
