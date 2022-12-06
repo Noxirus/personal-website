@@ -52,7 +52,7 @@ font-size: clamp(25px, 3vw, 30px);
 `
 
 const StyledNavbarText = styled(NavbarText)`
-  font-size: clamp(20px, 3vw, 25px);
+  font-size: clamp(15px, 3vw, 20px);
   color: ${ColourPalette.black};
   text-shadow: 0px 0px;
 `

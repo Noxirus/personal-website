@@ -17,7 +17,7 @@ import Resume from "../../../library/Hamish Harrison Resume.pdf";
 
 const ExperienceSection = () => {
 
-   return (<InfoSection id="experience" padding="300px">
+   return (<InfoSection id="experience" padding="200px">
     <Row>
         <Col>
             <CenteredTitle>Experience</CenteredTitle>

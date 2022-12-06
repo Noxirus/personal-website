@@ -7,7 +7,7 @@ import Headshot from "../../../Images/HamishHeadshot.png";
 
 const AboutSection = () => {
 
-   return (<InfoSection id="about" padding="250px">
+   return (<InfoSection id="about" padding="200px">
     <Row>
         <Col>
             <CenteredTitle>About</CenteredTitle>
@@ -34,9 +34,9 @@ const AboutSection = () => {
                 Looking forward to seeing the differences between the two major Engines.
             </ParagraphText>      
         </StyledAboutCol>
-        <Col>
+        <StyledImageCol>
             <PersonalImage alt="Hamish Harrison" src={Headshot} />
-        </Col>
+        </StyledImageCol>
     </Row>
 </InfoSection>);
 }
@@ -48,10 +48,16 @@ margin: auto;
 
 `
 
+const StyledImageCol = styled(Col)`
+display: flex;
+
+`
+
 const PersonalImage = styled.img`
 width: 80%;
-text-align: center;
-background-repeat: no-repeat;
+margin:0 auto;
+
+
 background-size: contain;
 border: 2px solid ${ColourPalette.tertiary};
 `

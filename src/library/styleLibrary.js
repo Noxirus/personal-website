@@ -19,7 +19,7 @@ color: ${ColourPalette.secondary};
 `
 
 export const CenteredTitle = styled.h1`
-font-size: clamp(35px, 6vw, 60px);
+font-size: clamp(30px, 6vw, 60px);
 text-align: center;
     color: ${ColourPalette.primary}
 `
@@ -45,6 +45,8 @@ background-color: ${ColourPalette.tertiary};
 
 
 export const SocialMediaIcon = styled(FontAwesomeIcon)`
+  margin-top: 10px;
+  margin-bottom: 10px;
   min-width: 50px;
   &:hover{
     cursor: pointer;
