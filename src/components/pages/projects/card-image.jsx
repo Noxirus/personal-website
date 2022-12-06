@@ -6,7 +6,7 @@ import VideoEmbed from '../../video-embed';
 const CardImage = ({details}) => {
 
    return ( <ImageCol xl="5" lg="6" sm="12">
-   {details.img == "" ? <VideoEmbed videoUrl={details.videoUrl} /> : <ProjectImage
+   {details.img === "" ? <VideoEmbed videoUrl={details.videoUrl} /> : <ProjectImage
      alt={details.description}
      src={details.img} //TODO add image ref here
    />} 

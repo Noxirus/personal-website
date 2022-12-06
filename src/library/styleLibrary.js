@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { ColourPalette } from './colorPalette';
 import { Container, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -44,6 +44,20 @@ background-color: ${ColourPalette.tertiary};
 `
 
 
+const popIn = keyframes`
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+`
+
 export const SocialMediaIcon = styled(FontAwesomeIcon)`
   margin-top: 10px;
   margin-bottom: 10px;
@@ -53,6 +67,8 @@ export const SocialMediaIcon = styled(FontAwesomeIcon)`
     color:  ${ColourPalette.primary}
     //TODO add on hover animation and press here
   }
-  color: ${props => props.color ? props.color : ColourPalette.dark}
-
+  color: ${props => props.color ? props.color : ColourPalette.dark};
+  transform: scale(0);
+  animation: ${popIn} 1s linear ${props => props.delay ? props.delay : "0s"};
+  animation-fill-mode: forwards
 `

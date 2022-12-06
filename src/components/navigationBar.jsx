@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 import {
   Collapse,
   Navbar,
@@ -9,7 +9,7 @@ import {
   NavbarText,
   NavItem,
 } from 'reactstrap';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { ColourPalette } from '../library/colorPalette';
 import { SocialMediaIcon } from '../library/styleLibrary';
@@ -27,14 +27,14 @@ const NavigationBar = (args) => {
         <Nav className="me-auto" navbar />
 
         {/*Smooth scroll for these links */}
-        <StyledNavItem><StyledNavlink to="projects" spy={true} smooth={true} offset={80} duration={200}>Projects</StyledNavlink></StyledNavItem>
-        <StyledNavItem><StyledNavlink to="experience" spy={true} smooth={true} offset={80} duration={200}>Experience</StyledNavlink></StyledNavItem>
-        <StyledNavItem><StyledNavlink to="about" spy={true} smooth={true} offset={80} duration={200}>About</StyledNavlink></StyledNavItem>
-        <StyledNavItem><StyledNavlink to="contact" spy={true} smooth={true} offset={50} duration={200}>Contact</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay="0s"><StyledNavlink colorchange="red" to="projects" spy={true} smooth={true} offset={80} duration={200}>Projects</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay=".25s"><StyledNavlink colorchange="blue" to="experience" spy={true} smooth={true} offset={80} duration={200}>Experience</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay=".5s"><StyledNavlink colorchange="yellow" to="about" spy={true} smooth={true} offset={80} duration={200}>About</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay=".75s"><StyledNavlink colorchange="green" to="contact" spy={true} smooth={true} offset={50} duration={200}>Contact</StyledNavlink></StyledNavItem>
         
-        <StyledNavItem><StyledNavlink to="" onClick={() => window.open(Resume)}>Resume</StyledNavlink></StyledNavItem>
-        <SocialMediaIcon icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
-        <SocialMediaIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
+        <StyledNavItem delay="1s"><StyledNavlink to="" onClick={() => window.open(Resume)}>Resume</StyledNavlink></StyledNavItem>
+        <SocialMediaIcon delay="1.25s" icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
+        <SocialMediaIcon delay="1.5s" icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
     </StyledNavbar>
   );
@@ -42,8 +42,21 @@ const NavigationBar = (args) => {
 
 export default NavigationBar;
 
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
 const StyledNavItem = styled(NavItem)`
-list-style-type: none;  
+list-style-type: none;
+opacity: 0;
+animation: ${fadeIn} 1s linear ${props => props.delay ? props.delay : "0s"};
+animation-fill-mode: forwards
 `
 
 const StyledNavBrand = styled(NavbarBrand)`
@@ -72,10 +85,8 @@ text-decoration: none;
 padding-right: 50px;
 padding-bottom: 5px;
 padding-top: 5px;
-  font-size: clamp(20px, 3vw, 20px);
-  color: ${ColourPalette.dark}
-
-
+font-size: clamp(20px, 3vw, 20px);
+color: ${ColourPalette.dark};
 `
 
 const StyledNavbar = styled(Navbar)`
@@ -85,4 +96,18 @@ const StyledNavbar = styled(Navbar)`
   box-shadow: 0px 2px ${ColourPalette.primary};
   position: fixed;
   z-index:1;
+`
+
+const changeColour = (color) => keyframes`
+  from {
+    color: black;
+  }
+  to {
+    color: ${color};
+  }
+`
+
+const AnimationRef = styled.div`
+animation: ${props => changeColour(props.colorchange)} 2s;
+animation-fill-mode: forwards
 `

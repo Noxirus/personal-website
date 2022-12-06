@@ -53,7 +53,7 @@ export const AbandonShip = {
     link: "https://www.monikerpartners.com/virtual-games/abandon-ship",
     description: "A lost at sea escape room! Digital experience made from Unity WebGL. Uses Addressable loading in order for better performance in regard to loading times. " 
     + "Utilizes React plugins in order to communicate with the users browser and " 
-    + "subsequently the Firebase Database, this allows for team synchronized states",
+    + "subsequently the Firebase Database, this allows for team synchronized states.",
 }
 
 export const OmegaProtocol = {
