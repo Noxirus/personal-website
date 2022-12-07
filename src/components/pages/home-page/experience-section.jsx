@@ -16,7 +16,6 @@ import { ParagraphText } from '../../../library/styleLibrary';
 import Resume from "../../../library/Hamish Harrison Resume.pdf";
 
 const ExperienceSection = () => {
-
    return (<InfoSection id="experience" padding="200px">
     <Row>
         <Col>
@@ -26,14 +25,14 @@ const ExperienceSection = () => {
     <br />
     <Row>
         <StyledIconCol>
-            <SkillIcon imgRef={cSharpIcon} altText="C#" />
-            <SkillIcon imgRef={javascriptIcon} altText="Javascript" />
-            <SkillIcon imgRef={visualStudioIcon} altText="Visual Studio" />
-            <SkillIcon imgRef={unityIcon} altText="Unity" />
-            <SkillIcon imgRef={reactIcon} altText="React" />
-            <SkillIcon imgRef={gitHubIcon} altText="Github" />
-            <SkillIcon imgRef={firebaseIcon} altText="Firebase" />
-            <SkillIcon imgRef={npmIcon} altText="NPM" />     
+            <SkillIcon delay=".05s" imgRef={cSharpIcon} altText="C#" />
+            <SkillIcon delay=".1s" imgRef={javascriptIcon} altText="Javascript" />
+            <SkillIcon delay=".15s" imgRef={visualStudioIcon} altText="Visual Studio" />
+            <SkillIcon delay=".2s" imgRef={unityIcon} altText="Unity" />
+            <SkillIcon delay=".25s" imgRef={reactIcon} altText="React" />
+            <SkillIcon delay=".3s" imgRef={gitHubIcon} altText="Github" />
+            <SkillIcon delay=".35s" imgRef={firebaseIcon} altText="Firebase" />
+            <SkillIcon delay=".4s" imgRef={npmIcon} altText="NPM" />
         </StyledIconCol>  
     </Row>
     <br />

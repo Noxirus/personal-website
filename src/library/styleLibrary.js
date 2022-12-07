@@ -1,27 +1,36 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { ColourPalette } from './colorPalette';
 import { Container, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { popIn } from './animations';
 
 export const PrimaryText = styled.h1`
 font-size: clamp(40px, 8vw, 80px);
 color: ${ColourPalette.primary};
+animation: ${props => props.animation ? props.animation : ""};
+${props => props.initialState ? props.initialState : ""};
 `
 
 export const SecondaryText = styled.h2`
 font-size: clamp(30px, 6vw, 50px);
 color: ${ColourPalette.secondary};
+animation: ${props => props.animation ? props.animation : ""};
+${props => props.initialState ? props.initialState : ""};
 `
 
 export const ParagraphText = styled.p`
 font-size: clamp(10px, 4vw, 25px);
-color: ${ColourPalette.secondary};
+color: ${props => props.colorSet ? props.colorSet : ColourPalette.secondary};
+animation: ${props => props.animation ? props.animation : ""};
+${props => props.initialState ? props.initialState : ""};
 `
 
 export const CenteredTitle = styled.h1`
 font-size: clamp(30px, 6vw, 60px);
 text-align: center;
-    color: ${ColourPalette.primary}
+color: ${ColourPalette.primary};
+animation: ${props => props.animation ? props.animation : ""};
+${props => props.initialState ? props.initialState : ""};
 `
 
 export const InfoSection = styled(Container)`
@@ -41,21 +50,6 @@ font-size: clamp(10px, 4vw, 25px);
 color: ${ColourPalette.dark};
 border-color: ${ColourPalette.secondary};
 background-color: ${ColourPalette.tertiary};
-`
-
-
-const popIn = keyframes`
-  0% {
-    transform: scale(0);
-  }
-
-  80% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 `
 
 export const SocialMediaIcon = styled(FontAwesomeIcon)`

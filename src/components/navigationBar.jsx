@@ -9,11 +9,12 @@ import {
   NavbarText,
   NavItem,
 } from 'reactstrap';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { ColourPalette } from '../library/colorPalette';
 import { SocialMediaIcon } from '../library/styleLibrary';
 import Resume from "../../src/library/Hamish Harrison Resume.pdf";
+import { fadeIn } from '../library/animations';
 
 const NavigationBar = (args) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,26 +43,22 @@ const NavigationBar = (args) => {
 
 export default NavigationBar;
 
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`
-
 const StyledNavItem = styled(NavItem)`
 list-style-type: none;
-opacity: 0;
 animation: ${fadeIn} 1s linear ${props => props.delay ? props.delay : "0s"};
-animation-fill-mode: forwards
+opacity: 0;
+
+animation-fill-mode: forwards;
+
+&:hover{
+  opacity: 1;
+}
 `
 
 const StyledNavBrand = styled(NavbarBrand)`
 &:hover{
   text-shadow: 2px 2px ${ColourPalette.secondary};
+  
 }
 
 font-size: clamp(25px, 3vw, 30px);
@@ -96,18 +93,4 @@ const StyledNavbar = styled(Navbar)`
   box-shadow: 0px 2px ${ColourPalette.primary};
   position: fixed;
   z-index:1;
-`
-
-const changeColour = (color) => keyframes`
-  from {
-    color: black;
-  }
-  to {
-    color: ${color};
-  }
-`
-
-const AnimationRef = styled.div`
-animation: ${props => changeColour(props.colorchange)} 2s;
-animation-fill-mode: forwards
 `
