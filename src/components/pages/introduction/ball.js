@@ -7,8 +7,8 @@ export class ball  {
         this.y = y;
     }
     name = "";
-    x = 50;
-    y = 50;
+    x;
+    y;
     vx = Math.random() * .3;
     vy = Math.random() * .3;
     radius = 10
