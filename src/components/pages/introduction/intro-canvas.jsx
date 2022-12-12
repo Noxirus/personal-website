@@ -2,14 +2,13 @@ import React from 'react';
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { ball } from './ball';
-import { ColourPalette } from '../../../library/colorPalette';
-
 
 const IntroCanvas = () => {
     useEffect(() => {
-        console.log("UseEffect triggered");
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
+        var ballIterator = 5;
+
         var balls = [];
         balls.push(new ball("Ball 1", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
         balls.push(new ball("Ball 2", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
@@ -38,7 +37,7 @@ const IntroCanvas = () => {
                     ctx.moveTo(balls[i].x, balls[i].y);
                     ctx.lineTo(balls[x].x, balls[x].y);
                     ctx.lineWidth = .3;
-                    ctx.strokeStyle = ColourPalette.secondary
+                    ctx.strokeStyle = balls[i].color;
                     ctx.stroke();
                 }
             }
@@ -48,12 +47,16 @@ const IntroCanvas = () => {
 
         canvas.addEventListener("click", function(event){
             var mousePos = getMousePos(canvas, event);
-            var x = mousePos.x / 2;
-            var y = mousePos.y / 2;
+            var x = mousePos.x / canvas.offsetWidth;
+            var y = mousePos.y / canvas.offsetHeight;
+
+            x *= canvas.width;
+            y *= canvas.height;
+
             var clickedBool = false;
             balls.forEach(ball => {
-                if (x < (ball.x + (ball.radius * 1.5)) && x > (ball.x - ball.radius) &&
-                    y < (ball.y + (ball.radius * 1.5)) && y > (ball.y - (ball.radius * 1.5))) {
+                if (x < (ball.x + ball.radius) && x > (ball.x - ball.radius) &&
+                    y < (ball.y + ball.radius) && y > (ball.y - ball.radius)) {
                     for(let i = 0; i < balls.length; i++){
                         if(ball.name === balls[i].name){
                             balls.splice(i, 1);
@@ -63,7 +66,8 @@ const IntroCanvas = () => {
                 }
             })
             if(balls.length >= 6 || clickedBool){return;}
-            balls.push(new ball("Ball " + balls.length + 1, x, y));
+            balls.push(new ball("Ball " + ballIterator, x, y));
+            ballIterator++;
         })
         window.requestAnimationFrame(moveBall);
     }, []);

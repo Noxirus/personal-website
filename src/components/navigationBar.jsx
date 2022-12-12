@@ -63,7 +63,7 @@ const StyledNavBrand = styled(NavbarBrand)`
 
 font-size: clamp(25px, 3vw, 30px);
   color: ${ColourPalette.primary};
-  text-shadow: 2px 2px ${ColourPalette.dark};
+  text-shadow: 1px 1px ${ColourPalette.dark};
 `
 
 const StyledNavbarText = styled(NavbarText)`

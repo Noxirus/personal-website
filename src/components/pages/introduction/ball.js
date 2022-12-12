@@ -5,6 +5,7 @@ export class ball  {
         this.name = name;
         this.x = x;
         this.y = y;
+        this.color = (Math.floor(Math.random() * 2) == 0 ? ColourPalette.primary : ColourPalette.tertiary)
     }
     name = "";
     x;
@@ -12,7 +13,7 @@ export class ball  {
     vx = Math.random() * .3;
     vy = Math.random() * .3;
     radius = 10
-    color = ColourPalette.primary
+    color
     draw(canvas) 
     {
         canvas.beginPath();
