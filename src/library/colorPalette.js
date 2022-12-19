@@ -1,8 +1,8 @@
 export const ColourPalette ={
-    primary: "#FFA101",
-    secondary: "#FAE6B1",
-    tertiary: "#B3DEE5",
-    dark: "#31525B",
-    grey: "#1d1d1d",
-    black: "#000000"
+    primary: "rgb(255, 161, 1)",
+    secondary: "rgb(250, 230, 177)",
+    tertiary: "rgb(179, 222, 229)",
+    dark: "rgb(49, 82, 91)",
+    grey: "rgb(29, 29, 29)",
+    black: "rgb(0, 0, 0)"
 }
