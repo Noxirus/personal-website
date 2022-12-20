@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { Row, Col } from 'reactstrap';
 import styled, { css } from 'styled-components';
 import { fadeIn } from '../../../library/animations';

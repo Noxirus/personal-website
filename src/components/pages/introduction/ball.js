@@ -18,11 +18,11 @@ export class ball  {
 
     baseColor
     alphaColor
-    alpha = 0;
+    animationTime = 0;
     draw(canvas) 
     {
-        if(this.alpha < 100){
-            this.alpha += .5;
+        if(this.animationTime < 100){
+            this.animationTime += .5;
         }
         this.drawCircle(canvas);
     }
@@ -47,8 +47,8 @@ export class ball  {
     fadeOut(canvas){
         this.drawCircle(canvas);
 
-        if(this.alpha > 0){
-            this.alpha -= 1;
+        if(this.animationTime > 0){
+            this.animationTime -= 1;
             return false;
         }
 
@@ -66,11 +66,9 @@ export class ball  {
         canvas.fill();
     }
 
-
-
     returnColor(){
-        if(this.alpha < 100){
-            return this.alphaColor + this.alpha/100 + ")"
+        if(this.animationTime < 100){
+            return this.alphaColor + this.animationTime/100 + ")"
         }
         else{
             return this.baseColor;

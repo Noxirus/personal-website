@@ -21,3 +21,7 @@ export function IsInViewport(ref) {
 
     return isIntersecting;
   }
+
+  export function Lerp(start, destination, value){
+    return start + (destination - start) * value;
+  }

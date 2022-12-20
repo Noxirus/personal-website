@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import styled from 'styled-components';
+import { Lerp } from '../../../library/functionLibrary';
 import { ball } from './ball';
 
 const IntroCanvas = () => {
@@ -40,8 +41,8 @@ const IntroCanvas = () => {
                 for(let x = i + 1; x < balls.length; x++){
                     ctx.beginPath()
                     ctx.moveTo(balls[i].x, balls[i].y);
-                    ctx.lineTo(balls[x].x, balls[x].y);
-                    ctx.lineWidth = .3;
+                    ctx.lineTo(Lerp(balls[i].x, balls[x].x, (balls[x].animationTime / 100)), Lerp(balls[i].y, balls[x].y, (balls[x].animationTime / 100)));
+                    ctx.lineWidth = .5;
                     ctx.strokeStyle = balls[i].returnColor();
                     ctx.stroke();
                 }
