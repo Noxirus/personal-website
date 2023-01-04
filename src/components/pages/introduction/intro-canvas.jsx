@@ -8,8 +8,7 @@ const IntroCanvas = () => {
     useEffect(() => {
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
-        
-        
+             
         var fadingOutBalls = [];
         var balls = [];
         balls.push(new ball("Ball 1", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
@@ -17,8 +16,8 @@ const IntroCanvas = () => {
         balls.push(new ball("Ball 3", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
         balls.push(new ball("Ball 4", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
 
-        var ballIterator = balls.length;
-        function moveBall() {
+        var ballIterator = balls.length + 1;
+        function moveBalls() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             balls.forEach(ball => {
                 ball.draw(ctx);
@@ -42,13 +41,12 @@ const IntroCanvas = () => {
                     ctx.beginPath()
                     ctx.moveTo(balls[i].x, balls[i].y);
                     ctx.lineTo(Lerp(balls[i].x, balls[x].x, (balls[x].animationTime / 100)), Lerp(balls[i].y, balls[x].y, (balls[x].animationTime / 100)));
-                    ctx.lineWidth = .5;
+                    ctx.lineWidth = 1;
                     ctx.strokeStyle = balls[i].returnColor();
                     ctx.stroke();
                 }
             }
-                window.requestAnimationFrame(moveBall);
-            
+                window.requestAnimationFrame(moveBalls);   
         }
 
         canvas.addEventListener("click", function(event){
@@ -76,7 +74,7 @@ const IntroCanvas = () => {
             balls.push(new ball("Ball " + ballIterator, x, y));
             ballIterator++;
         })
-        window.requestAnimationFrame(moveBall);
+        window.requestAnimationFrame(moveBalls);
     }, []);
 
     function getMousePos(canvas, evt) {
