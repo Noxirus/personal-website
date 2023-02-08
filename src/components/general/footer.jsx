@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'reactstrap';
 import styled from 'styled-components';
-import { ColourPalette } from '../library/colorPalette';
-import { InfoSection} from '../library/styleLibrary';
-import { SocialMediaIcon } from '../library/styleLibrary';
+import { ColourPalette } from '../../library/colorPalette';
+import { InfoSection} from '../../library/styleLibrary';
+import { SocialMediaIcon } from '../../library/styleLibrary';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {

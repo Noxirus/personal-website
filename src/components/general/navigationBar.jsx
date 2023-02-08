@@ -11,10 +11,10 @@ import {
 } from 'reactstrap';
 import styled from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { ColourPalette } from '../library/colorPalette';
-import { SocialMediaIcon } from '../library/styleLibrary';
-import Resume from "../../src/library/Hamish Harrison Resume.pdf";
-import { fadeIn } from '../library/animations';
+import { ColourPalette } from '../../library/colorPalette';
+import { SocialMediaIcon } from '../../library/styleLibrary';
+import Resume from "../../../src/library/Hamish Harrison Resume.pdf";
+import { fadeIn } from '../../library/animations';
 
 const NavigationBar = (args) => {
   const [isOpen, setIsOpen] = useState(false);

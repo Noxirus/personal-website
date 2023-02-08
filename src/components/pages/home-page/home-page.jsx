@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AboutSection from './about-section';
 import ExperienceSection from './experience-section';
 import ProjectSection from './project-section';
-import ContactMe from '../contact-me';
+import ContactMe from './contact-me';
 import IntroductionSection from '../introduction/introduction-section';
 
 const HomePage = () => {

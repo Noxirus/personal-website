@@ -92,7 +92,7 @@ export const GymnasticTrial = {
     tech: "Unity, C#",
     roles: "personal project",
     img: "",
-    link: "",
+    link: "https://www.youtube.com/embed/MW8gWSx284o",
     videoUrl: "https://www.youtube.com/embed/MW8gWSx284o",
     description: "I have a background in gymnastics I thought it would be fun to make a game with some of those ideas. " + 
     "This a prototype for an endless runner game where you are flipping and stunting around to gain energy, which subsequently allows you to move faster and jump higher.",

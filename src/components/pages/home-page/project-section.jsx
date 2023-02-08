@@ -7,7 +7,7 @@ import {
     HIMALAYASTrial, 
 } from '../../../library/projectLibrary';
 
-import { CenteredTitle, InfoSection, StyledButton } from '../../../library/styleLibrary';
+import { CenteredCol, CenteredTitle, InfoSection, StyledButton } from '../../../library/styleLibrary';
 
 const OpenProjectArchive = () => {
     window.open("/#/projects", "_self")
@@ -27,7 +27,11 @@ const ProjectSection = () => {
         <ProjectCard details={PipePuzzles} />
         <ProjectCard details={AbandonShip} flipped={true} />
         <ProjectCard details={HIMALAYASTrial} />
-        <StyledButton onClick={() => OpenProjectArchive()}>See more projects</StyledButton>
+        <Row>
+            <CenteredCol>
+                <StyledButton onClick={() => OpenProjectArchive()}>See more projects</StyledButton>
+            </CenteredCol>
+        </Row>
     </InfoSection>);
 }
 export default ProjectSection;

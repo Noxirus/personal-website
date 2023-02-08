@@ -5,7 +5,7 @@ export class ball  {
         this.name = name;
         this.x = x;
         this.y = y;
-        this.baseColor = (Math.floor(Math.random() * 2) == 0 ? ColourPalette.primary : ColourPalette.tertiary)
+        this.baseColor = (Math.floor(Math.random() * 2) === 0 ? ColourPalette.primary : ColourPalette.tertiary)
         this.alphaColor = this.baseColor.substring(0, this.baseColor.length - 1);
         this.alphaColor += ","
     }
@@ -53,6 +53,10 @@ export class ball  {
         }
 
         return true;
+    }
+
+    finishedFadingOut(){
+        return this.animationTime <= 0;
     }
 
     drawCircle(canvas){

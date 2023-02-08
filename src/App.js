@@ -1,13 +1,13 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import React from 'react';
-import NavigationBar from './components/navigationBar';
+import NavigationBar from './components/general/navigationBar';
 import HomePage from './components/pages/home-page/home-page';
-import NotFound from './components/not-found';
+import NotFound from './components/general/not-found';
 import ProjectPage from './components/pages/projects/project-archive';
 import styled from 'styled-components';
 import { ColourPalette } from './library/colorPalette';
-import Footer from './components/footer';
+import Footer from './components/general/footer';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ColourPalette } from './colorPalette';
-import { Container, Button } from 'reactstrap';
+import { Container, Button, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { popIn } from './animations';
 
@@ -65,4 +65,8 @@ export const SocialMediaIcon = styled(FontAwesomeIcon)`
   transform: scale(0);
   animation: ${popIn} 1s linear ${props => props.delay ? props.delay : "0s"};
   animation-fill-mode: forwards
+`
+
+export const CenteredCol = styled(Col)`
+text-align: center;
 `

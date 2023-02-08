@@ -32,7 +32,6 @@ const IntroductionSection = () => {
 }
 export default IntroductionSection;
 
-
 const StyledAboutCol = styled(Col)`
 margin: auto;
 `
