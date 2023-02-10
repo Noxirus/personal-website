@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Col } from 'reactstrap';
-import VideoEmbed from '../../general/video-embed';
+
+const VideoEmbed = React.lazy(() => import('../../general/video-embed'));
 
 const CardImage = ({details}) => {
 
