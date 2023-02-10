@@ -1,14 +1,14 @@
-import TeamUnbreakableImage from "../Images/TeamUnbreakable.png";
-import HIMALAYASImage from "../Images/HIMALAYAS.png";
-import HamlicksImage from "../Images/Hamlicks.png";
+import TeamUnbreakableImage from "../Images/TeamUnbreakable.webp";
+import HIMALAYASImage from "../Images/HIMALAYAS.webp";
+import HamlicksImage from "../Images/Hamlicks.webp";
 
-import PipePuzzleFacade from "../Images/PipePuzzlesFacade.png";
-import AbandonShipFacade from "../Images/AbandonShipFacade.png";
-import ArtemisFacade from "../Images/ArtemisFacade.png";
-import FinalVerdictFacade from "../Images/FinalVerdictFacade.png";
-import GymnasticFacade from "../Images/GymnasticFacade.png";
-import OmegaFacade from "../Images/OmegaFacade.png";
-import WilfredEscapeFacade from "../Images/WilfredEscapeFacade.png";
+import PipePuzzleFacade from "../Images/PipePuzzlesFacade.webp";
+import AbandonShipFacade from "../Images/AbandonShipFacade.webp";
+import ArtemisFacade from "../Images/ArtemisFacade.webp";
+import FinalVerdictFacade from "../Images/FinalVerdictFacade.webp";
+import GymnasticFacade from "../Images/GymnasticFacade.webp";
+import OmegaFacade from "../Images/OmegaFacade.webp";
+import WilfredEscapeFacade from "../Images/WilfredEscapeFacade.webp";
 
 export const TeamUnbreakable = {
     title: "Team Unbreakable",

@@ -3,7 +3,7 @@ import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import { ColourPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
-import Headshot from "../../../Images/HamishHeadshot.png";
+import Headshot from "../../../Images/HamishHeadshot.webp";
 
 const AboutSection = () => {
 
@@ -35,7 +35,7 @@ const AboutSection = () => {
             </ParagraphText>      
         </StyledAboutCol>
         <StyledImageCol>
-            <PersonalImage alt="Hamish Harrison" src={Headshot} />
+            <PersonalImage title="Hamish Harrison" alt="Hamish Harrison" src={Headshot} />
         </StyledImageCol>
     </Row>
 </InfoSection>);

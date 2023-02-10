@@ -18,6 +18,7 @@ const CardImage = ({details}) => {
    return ( <ImageCol onMouseEnter={() => OnHover()} xl="5" lg="6" sm="12">
    {viewingTrailer ? <VideoEmbed videoUrl={details.videoUrl} /> : <ProjectImage
      alt={details.description}
+     title={details.title}
      src={details.img}
    />} 
    </ImageCol>);
