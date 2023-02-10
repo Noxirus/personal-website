@@ -2,6 +2,14 @@ import TeamUnbreakableImage from "../Images/TeamUnbreakable.png";
 import HIMALAYASImage from "../Images/HIMALAYAS.png";
 import HamlicksImage from "../Images/Hamlicks.png";
 
+import PipePuzzleFacade from "../Images/PipePuzzlesFacade.png";
+import AbandonShipFacade from "../Images/AbandonShipFacade.png";
+import ArtemisFacade from "../Images/ArtemisFacade.png";
+import FinalVerdictFacade from "../Images/FinalVerdictFacade.png";
+import GymnasticFacade from "../Images/GymnasticFacade.png";
+import OmegaFacade from "../Images/OmegaFacade.png";
+import WilfredEscapeFacade from "../Images/WilfredEscapeFacade.png";
+
 export const TeamUnbreakable = {
     title: "Team Unbreakable",
     tech: "React, CSS, HTML, Firebase",
@@ -26,7 +34,7 @@ export const PipePuzzles = {
     title: "Deleptual: Pipe Puzzles",
     tech: "Unity, C#, Android, Firebase, Google Play Services",
     roles: "programmer, designer, composer",
-    img: "",
+    img: PipePuzzleFacade,
     videoUrl: "https://www.youtube.com/embed/lEDCois9gI0",
     link: "https://play.google.com/store/apps/details?id=com.deleptual.pipepuzzles&hl=en_CA&gl=US",
 
@@ -38,7 +46,7 @@ export const TheWilfredEscape = {
     title: "The Wilfred Escape",
     tech: "Unity, C#, WebGL, React, Firebase",
     roles: "core programmer, designer",
-    img: "",
+    img: WilfredEscapeFacade,
     videoUrl: "https://www.youtube.com/embed/RhE8UD6vo0U",
     link: "https://deleptual.ca/halloween-2022",
     description: "A Halloween escape room. This particular WebGL game was designed with solo team play in mind so a new journal system was created to support the team with hints.",
@@ -48,7 +56,7 @@ export const AbandonShip = {
     title: "Abandon Ship",
     tech: "Unity, C#, WebGL, React, Firebase",
     roles: "core programmer, designer",
-    img: "",
+    img: AbandonShipFacade,
     videoUrl: "https://player.vimeo.com/video/680068295",
     link: "https://www.monikerpartners.com/virtual-games/abandon-ship",
     description: "A lost at sea escape room! Digital experience made from Unity WebGL. Uses Addressable loading in order for better performance in regard to loading times. " 
@@ -60,7 +68,7 @@ export const OmegaProtocol = {
     title: "Omega Protocol",
     tech: "Unity, C#, WebGL, React, Firebase",
     roles: "programmer",
-    img: "",
+    img: OmegaFacade,
     link: "https://www.monikerpartners.com/virtual-games/omega-protocol",
     videoUrl: "https://player.vimeo.com/video/648700654",
     description: "WebGL based Unity game that uses spherical images to immerse the player in the environment. My task for the project was to make it more solo team friendly " +
@@ -71,7 +79,7 @@ export const FinalVerdict = {
     title: "Final Verdict",
     tech: "Unity, C#, WebGL, React, Firebase",
     roles: "core programmer, designer",
-    img: "",
+    img: FinalVerdictFacade,
     videoUrl: "https://player.vimeo.com/video/553373936",
     link: "https://www.monikerpartners.com/virtual-games/final-verdict",
     description: "A clue filled investigation! Designed as a canvas heavy game within 3d environments.",
@@ -81,7 +89,7 @@ export const ProjectArtemis = {
     title: "Project Artemis",
     tech: "Unity, C#, WebGL, React, Firebase",
     roles: "core programmer, designer",
-    img: "",
+    img: ArtemisFacade,
     videoUrl: "https://player.vimeo.com/video/422527690",
     link: "https://www.monikerpartners.com/virtual-games/project-artemis",
     description: "Do you have what it takes to survive? A 2d Unity game designed with team coordination in mind. Uses React/Firebase snapshots to keep team state synchronized.",
@@ -91,7 +99,7 @@ export const GymnasticTrial = {
     title: "Gymnastic Prototype",
     tech: "Unity, C#",
     roles: "personal project",
-    img: "",
+    img: GymnasticFacade,
     link: "https://www.youtube.com/embed/MW8gWSx284o",
     videoUrl: "https://www.youtube.com/embed/MW8gWSx284o",
     description: "I have a background in gymnastics I thought it would be fun to make a game with some of those ideas. " + 

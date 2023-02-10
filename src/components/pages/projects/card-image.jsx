@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Col } from 'reactstrap';
 
 const VideoEmbed = React.lazy(() => import('../../general/video-embed'));
 
 const CardImage = ({details}) => {
+  const[viewingTrailer, setViewingTrailer] = useState(false);
 
-   return ( <ImageCol xl="5" lg="6" sm="12">
-   {details.img === "" ? <VideoEmbed videoUrl={details.videoUrl} /> : <ProjectImage
+  function OnHover()
+  {
+    if(details.videoUrl !== undefined)
+    {
+      setViewingTrailer(true);
+    }
+  }
+
+   return ( <ImageCol onMouseEnter={() => OnHover()} xl="5" lg="6" sm="12">
+   {viewingTrailer ? <VideoEmbed videoUrl={details.videoUrl} /> : <ProjectImage
      alt={details.description}
      src={details.img}
    />} 
