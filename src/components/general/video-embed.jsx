@@ -10,7 +10,7 @@ const VideoEmbed = ({ videoUrl }) => (
       height="480"
       src={videoUrl}
       frameBorder="0"
-      allow="fullscreen; encrypted-media; gyroscope; picture-in-picture"
+      allow="encrypted-media; gyroscope; picture-in-picture"
       title="Embedded youtube"
     />
   </ResponsiveDiv>

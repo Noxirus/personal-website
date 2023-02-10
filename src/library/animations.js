@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const flipIcon = keyframes`
     0%{
@@ -74,7 +74,7 @@ export const shake = keyframes`
   }
 `
 
-const AnimationRef = styled.div`
+export const AnimationRef = styled.div`
 animation: ${props => changeColour(props.colorchange)} 2s;
 animation-fill-mode: forwards;
 `

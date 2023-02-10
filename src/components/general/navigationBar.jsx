@@ -27,15 +27,14 @@ const NavigationBar = (args) => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar />
 
-        {/*Smooth scroll for these links */}
-        <StyledNavItem delay="0s"><StyledNavlink colorchange="red" to="projects" spy={true} smooth={true} offset={80} duration={200}>Projects</StyledNavlink></StyledNavItem>
-        <StyledNavItem delay=".25s"><StyledNavlink colorchange="blue" to="experience" spy={true} smooth={true} offset={80} duration={200}>Experience</StyledNavlink></StyledNavItem>
-        <StyledNavItem delay=".5s"><StyledNavlink colorchange="yellow" to="about" spy={true} smooth={true} offset={80} duration={200}>About</StyledNavlink></StyledNavItem>
-        <StyledNavItem delay=".75s"><StyledNavlink colorchange="green" to="contact" spy={true} smooth={true} offset={50} duration={200}>Contact</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay="0s" $collapsed={isOpen}><StyledNavlink colorchange="red" to="projects" spy={true} smooth={true} offset={80} duration={200}>Projects</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay=".25s" $collapsed={isOpen}><StyledNavlink colorchange="blue" to="experience" spy={true} smooth={true} offset={80} duration={200}>Experience</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay=".5s" $collapsed={isOpen}><StyledNavlink colorchange="yellow" to="about" spy={true} smooth={true} offset={80} duration={200}>About</StyledNavlink></StyledNavItem>
+        <StyledNavItem delay=".75s" $collapsed={isOpen}><StyledNavlink colorchange="green" to="contact" spy={true} smooth={true} offset={50} duration={200}>Contact</StyledNavlink></StyledNavItem>
         
-        <StyledNavItem delay="1s"><StyledNavlink to="" onClick={() => window.open(Resume)}>Resume</StyledNavlink></StyledNavItem>
-        <SocialMediaIcon delay="1.25s" icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
-        <SocialMediaIcon delay="1.5s" icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
+        <StyledNavItem delay="1s" $collapsed={isOpen}><StyledNavlink to="" onClick={() => window.open(Resume)}>Resume</StyledNavlink></StyledNavItem>
+        <SocialMediaIcon delay="1.25s" $collapsed={isOpen} icon={faGithub} size="2x" onClick={() => window.open("https://github.com/noxirus")} />
+        <SocialMediaIcon delay="1.5s" $collapsed={isOpen} icon={faLinkedin} size="2x" onClick={() => window.open("https://www.linkedin.com/in/hamish-harrison/")} />
       </Collapse>
     </StyledNavbar>
   );
@@ -45,7 +44,7 @@ export default NavigationBar;
 
 const StyledNavItem = styled(NavItem)`
 list-style-type: none;
-animation: ${fadeIn} 1s linear ${props => props.delay ? props.delay : "0s"};
+animation: ${fadeIn} 1s linear ${props => (props.delay && !props.$collapsed) ? props.delay : "0s"};
 opacity: 0;
 
 animation-fill-mode: forwards;

@@ -63,7 +63,7 @@ export const SocialMediaIcon = styled(FontAwesomeIcon)`
   }
   color: ${props => props.color ? props.color : ColourPalette.dark};
   transform: scale(0);
-  animation: ${popIn} 1s linear ${props => props.delay ? props.delay : "0s"};
+  animation: ${popIn} 1s linear ${props => (props.delay && !props.$collapsed) ? props.delay : "0s"};
   animation-fill-mode: forwards
 `
 
