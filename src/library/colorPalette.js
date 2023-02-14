@@ -1,5 +1,3 @@
-//Orange and Teal
-
 const OrangeAndTeal ={
     primary: "rgb(245, 136, 0)",
     secondary: "rgb(248, 188, 36)",
@@ -9,7 +7,6 @@ const OrangeAndTeal ={
     grey: "rgb(29, 29, 29)",
 }
 
-//
 const PinkAndBlue ={
     primary: "rgb(233, 175, 163)",
     secondary: "rgb(249, 222, 201)",

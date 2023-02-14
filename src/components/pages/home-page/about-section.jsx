@@ -18,7 +18,7 @@ const AboutSection = () => {
         <StyledAboutCol xl="6" md="12">
             <ParagraphText>
                 My name is Hamish and I love building software. Originally studied Linguistics with a Musical Minor at the University of Calgary.
-                After a few years of Administrative assistant work I decided I wanted a career change. 
+                After a few years of Administrative Assistant work I decided I wanted a career change. 
             </ParagraphText>
             <ParagraphText>
                 I attended the Object Oriented Software Development fast track program at SAIT. During that time I learned: C#, Javascript, HTML, CSS, Java, Android Studio, SQL Server,

@@ -42,8 +42,8 @@ const ExperienceSection = () => {
                 I have been in professional full stack development for 2 years. The technologies I have primarily worked on include: 
             </ParagraphText>
             <ul>
-                <StyledListItem>Unity WebGL/Android games utilizing: C#, Authentication services, Google Play Console, Google Admob Monetization.</StyledListItem>
-                <StyledListItem>Websites utilzing React, Firebase, Firestore, Javascript, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
+                <StyledListItem>Unity WebGL/Android games utilizing: C#/.NET, Google Firebase Cloud, Google Play Console, Google Admob Monetization.</StyledListItem>
+                <StyledListItem>Websites utilzing React, Javascript, Google Firebase Cloud, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
             </ul>
             <ParagraphText>
                 You can view more information via my resume <a href={Resume} target="_blank">here</a>.
