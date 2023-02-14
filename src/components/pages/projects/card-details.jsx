@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Col } from 'reactstrap';
-import { ColourPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../../library/colorPalette';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -24,17 +24,17 @@ export default CardDetails;
 
 const Title = styled.h1`
 font-size: clamp(20px, 3vw, 30px);
-color: ${ColourPalette.black};
+color: ${ColorPalette.tertiary};
 `
 
 const SecondaryText = styled.h2`
 font-size: clamp(15px, 2vw, 20px);
-color: ${ColourPalette.primary};
+color: ${ColorPalette.primary};
 `
 
 const ParagraphText = styled.p`
 font-size: clamp(10px, 4vw, 25px);
-color: ${ColourPalette.dark};
+color: ${ColorPalette.secondary};
 text-align: ${props => props.centered ? "center" : ""};
 `
 
@@ -43,7 +43,7 @@ min-width: 50px;
 margin-left: 10px;
 &:hover{
   cursor: pointer;
-  color: ${ColourPalette.primary}
+  color: ${ColorPalette.primary}
 }
 `
 

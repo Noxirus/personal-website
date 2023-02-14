@@ -1,11 +1,11 @@
-import { ColourPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../../library/colorPalette';
 
 export class ball  {
     constructor(name, x, y){
         this.name = name;
         this.x = x;
         this.y = y;
-        this.baseColor = (Math.floor(Math.random() * 2) === 0 ? ColourPalette.primary : ColourPalette.tertiary)
+        this.baseColor = (Math.floor(Math.random() * 2) === 0 ? ColorPalette.primary : ColorPalette.tertiary)
         this.alphaColor = this.baseColor.substring(0, this.baseColor.length - 1);
         this.alphaColor += ","
     }

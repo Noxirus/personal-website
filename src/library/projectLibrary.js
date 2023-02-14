@@ -37,9 +37,8 @@ export const PipePuzzles = {
     img: PipePuzzleFacade,
     videoUrl: "https://www.youtube.com/embed/lEDCois9gI0",
     link: "https://play.google.com/store/apps/details?id=com.deleptual.pipepuzzles&hl=en_CA&gl=US",
-
-    description: "A puzzle mobile game with increasing difficulty and mechanics, created using the Unity 3d Engine. Released on the Google Play Store. " +
-    "Uses Firebase authentication to save the users information and solved puzzles.",
+    description: "A mobile puzzle game with increasing difficulty and mechanics, created using the Unity Engine. Released on the Google Play Store. " +
+    "Uses Firebase authentication to save the users information.",
 }
 
 export const TheWilfredEscape = {
@@ -59,9 +58,7 @@ export const AbandonShip = {
     img: AbandonShipFacade,
     videoUrl: "https://player.vimeo.com/video/680068295",
     link: "https://www.monikerpartners.com/virtual-games/abandon-ship",
-    description: "A lost at sea escape room! Digital experience made from Unity WebGL. Uses Addressable loading in order for better performance in regard to loading times. " 
-    + "Utilizes React plugins in order to communicate with the users browser and " 
-    + "subsequently the Firebase Database, this allows for team synchronized states.",
+    description: "A lost at sea escape room! Digital experience made from Unity WebGL. Developed the input and puzzle systems. "
 }
 
 export const OmegaProtocol = {
@@ -103,7 +100,7 @@ export const GymnasticTrial = {
     link: "https://www.youtube.com/embed/MW8gWSx284o",
     videoUrl: "https://www.youtube.com/embed/MW8gWSx284o",
     description: "I have a background in gymnastics I thought it would be fun to make a game with some of those ideas. " + 
-    "This a prototype for an endless runner game where you are flipping and stunting around to gain energy, which subsequently allows you to move faster and jump higher.",
+    "This is a prototype for an endless runner game where you are flipping and stunting around to gain energy, which subsequently allows you to move faster and jump higher.",
 }
 
 export const HamlicksWebsite = {

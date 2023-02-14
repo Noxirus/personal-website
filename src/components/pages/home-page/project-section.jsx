@@ -20,7 +20,7 @@ const ProjectSection = () => {
    <InfoSection id="projects" padding="250px">
         <Row>
             <Col>
-                <CenteredTitle>Projects I have worked on</CenteredTitle>
+                <CenteredTitle>Project Library</CenteredTitle>
             </Col>
         </Row>
         <br />

@@ -6,7 +6,7 @@ import HomePage from './components/pages/home-page/home-page';
 import NotFound from './components/general/not-found';
 import ProjectPage from './components/pages/projects/project-archive';
 import styled from 'styled-components';
-import { ColourPalette } from './library/colorPalette';
+import { ColorPalette } from './library/colorPalette';
 import Footer from './components/general/footer';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 export default App;
 
 const BackgroundDiv = styled.div`
-background-color: ${ColourPalette.dark};
+background-color: ${ColorPalette.dark};
 width:100%;
 height:100%;
 position:fixed;

@@ -10,7 +10,7 @@ import firebaseIcon from "../../../Images/Icons/file-type-firebase.svg";
 import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
-import { ColourPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 import { ParagraphText } from '../../../library/styleLibrary';
 import Resume from "../../../library/Hamish Harrison Resume.pdf";
@@ -56,7 +56,7 @@ export default ExperienceSection;
 
 const StyledListItem = styled.li`
 font-size: clamp(10px, 4vw, 25px);
-color: ${ColourPalette.tertiary};
+color: ${ColorPalette.tertiary};
 `
 
 const StyledIconCol = styled(Col)`

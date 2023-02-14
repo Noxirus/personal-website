@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Lerp } from '../../../library/functionLibrary';
 import { ball } from './ball';
-import { ColourPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../../library/colorPalette';
 
 var maxBalls = 6;
 
@@ -104,5 +104,5 @@ const StyledCanvas = styled.canvas`
 width: 100%;
 height: 100%;
 border-style: solid;
-border-color: ${ColourPalette.secondary}
+border-color: ${ColorPalette.secondary}
 `

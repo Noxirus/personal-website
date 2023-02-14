@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
-import { ColourPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../../library/colorPalette';
 import { IsInViewport } from '../../../library/functionLibrary';
 import { flipIcon } from '../../../library/animations';
 
@@ -24,7 +24,7 @@ min-height: 50px;
 margin: 5px;
 padding: 5px;
 background-color: white;
-border-color: ${ColourPalette.primary} ${ColourPalette.secondary} ${ColourPalette.grey};
+border-color: ${ColorPalette.primary} ${ColorPalette.secondary} ${ColorPalette.grey};
 transform: scale(1, 1);
 animation: ${props => (props.trigger) && css`${flipIcon} .3s linear ${props => props.delay ? props.delay : "0s"}`};
 animation-fill-mode: forwards;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import styled, { css } from 'styled-components';
 import { fadeIn } from '../../../library/animations';
-import { ColourPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../../library/colorPalette';
 import { InfoSection, ParagraphText, PrimaryText, SecondaryText } from '../../../library/styleLibrary';
 import IntroCanvas from './intro-canvas';
 
@@ -17,11 +17,11 @@ const IntroductionSection = () => {
             <PrimaryText initialState={initialState} animation={animationString} delay=".3s">Hamish,</PrimaryText>
             <SecondaryText initialState={initialState} animation={animationString} delay="1s">Full Stack Developer</SecondaryText>
             <ParagraphText 
-                colorSet={ColourPalette.tertiary} 
+                colorSet={ColorPalette.tertiary} 
                 initialState={initialState} 
                 animation={animationString} 
                 delay="1.5s">
-                    Currently looking for opportunities!
+                    Currently exploring employment opportunities
             </ParagraphText>        
         </StyledAboutCol>
         <Col>

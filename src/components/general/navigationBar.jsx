@@ -11,7 +11,7 @@ import {
 } from 'reactstrap';
 import styled from 'styled-components';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { ColourPalette } from '../../library/colorPalette';
+import { ColorPalette } from '../../library/colorPalette';
 import { SocialMediaIcon } from '../../library/styleLibrary';
 import Resume from "../../../src/library/Hamish Harrison Resume.pdf";
 import { fadeIn } from '../../library/animations';
@@ -56,25 +56,25 @@ animation-fill-mode: forwards;
 
 const StyledNavBrand = styled(NavbarBrand)`
 &:hover{
-  text-shadow: 2px 2px ${ColourPalette.secondary};
+  text-shadow: 2px 2px ${ColorPalette.secondary};
   
 }
 
 font-size: clamp(25px, 3vw, 30px);
-  color: ${ColourPalette.primary};
-  text-shadow: 1px 1px ${ColourPalette.dark};
+  color: ${ColorPalette.primary};
+  text-shadow: 1px 1px ${ColorPalette.dark};
 `
 
 const StyledNavbarText = styled(NavbarText)`
   font-size: clamp(15px, 3vw, 20px);
-  color: ${ColourPalette.black};
+  color: ${ColorPalette.black};
   text-shadow: 0px 0px;
 `
 
 const StyledNavlink = styled(Link)`
 &:hover{
   cursor: pointer;
-  color: ${ColourPalette.primary};
+  color: ${ColorPalette.primary};
   text-decoration: underline;
 }
 text-decoration: none;
@@ -82,14 +82,14 @@ padding-right: 50px;
 padding-bottom: 5px;
 padding-top: 5px;
 font-size: clamp(20px, 3vw, 20px);
-color: ${ColourPalette.dark};
+color: ${ColorPalette.dark};
 `
 
 const StyledNavbar = styled(Navbar)`
   padding: 0px;
   background-color: white;
   width: 100%;
-  box-shadow: 0px 2px ${ColourPalette.primary};
+  box-shadow: 0px 2px ${ColorPalette.primary};
   position: fixed;
   z-index:1;
 `

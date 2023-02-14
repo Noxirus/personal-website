@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
-import { ColourPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../../library/colorPalette';
 import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
 import Headshot from "../../../Images/HamishHeadshot.webp";
 
@@ -54,10 +54,10 @@ const PersonalImage = styled.img`
 width: 80%;
 margin:0 auto;
 background-size: contain;
-border: 2px solid ${ColourPalette.tertiary};
+border: 2px solid ${ColorPalette.tertiary};
 `
 
 const ParagraphText = styled.p`
 font-size: clamp(10px, 4vw, 18px);
-color: ${ColourPalette.tertiary};
+color: ${ColorPalette.tertiary};
 `
