@@ -1,4 +1,4 @@
-import { ColorPalette } from '../../../library/colorPalette';
+import { ColorPalette } from '../../library/colorPalette';
 
 export class ball  {
     constructor(name, x, y){

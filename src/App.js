@@ -2,13 +2,13 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import React from 'react';
 import NavigationBar from './components/general/navigationBar';
-import HomePage from './components/pages/home-page/home-page';
+import HomePage from './components/pages/home-page';
 import NotFound from './components/general/not-found';
 import ProjectPage from './components/pages/projects/project-archive';
 import styled from 'styled-components';
 import { ColorPalette } from './library/colorPalette';
 import Footer from './components/general/footer';
-import AnimationBackground from './components/pages/introduction/animation-background';
+import AnimationBackground from './components/background-animation/animation-background';
 
 function App() {
   return (

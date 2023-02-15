@@ -1,10 +1,9 @@
 import React from 'react';
 import { Row } from 'reactstrap';
-import { BackgroundRow, CenteredCol, CenteredTitle, InfoSection, ParagraphText, StyledButton } from '../../../library/styleLibrary';
+import { BackgroundRow, CenteredCol, CenteredTitle, AutoMarginContainer, ParagraphText, StyledButton } from '../../../library/styleLibrary';
 
 const ContactMe = () => {
-
-   return (<InfoSection id="contact" padding="200px">
+   return (<AutoMarginContainer id="contact" padding="200px">
         <Row>
             <CenteredCol>
                 <CenteredTitle>Contact me</CenteredTitle>
@@ -19,6 +18,6 @@ const ContactMe = () => {
                 </StyledButton>
             </CenteredCol>
         </BackgroundRow>
-   </InfoSection>);
+   </AutoMarginContainer>);
 }
 export default ContactMe;

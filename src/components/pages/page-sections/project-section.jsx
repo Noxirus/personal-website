@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { CenteredCol, CenteredTitle, AutoMarginContainer, StyledButton } from '../../../library/styleLibrary';
 import ProjectCard from '../projects/project-card';
 import { 
     PipePuzzles, 
@@ -7,7 +8,6 @@ import {
     HIMALAYASTrial, 
 } from '../../../library/projectLibrary';
 
-import { CenteredCol, CenteredTitle, InfoSection, StyledButton } from '../../../library/styleLibrary';
 
 const OpenProjectArchive = () => {
     window.open("/#/projects", "_self")
@@ -15,9 +15,8 @@ const OpenProjectArchive = () => {
 }
 
 const ProjectSection = () => {
-
    return (
-   <InfoSection id="projects" padding="250px">
+   <AutoMarginContainer id="projects" padding="250px">
         <Row>
             <Col>
                 <CenteredTitle>Project Library</CenteredTitle>
@@ -32,6 +31,6 @@ const ProjectSection = () => {
                 <StyledButton onClick={() => OpenProjectArchive()}>See more projects</StyledButton>
             </CenteredCol>
         </Row>
-    </InfoSection>);
+    </AutoMarginContainer>);
 }
 export default ProjectSection;

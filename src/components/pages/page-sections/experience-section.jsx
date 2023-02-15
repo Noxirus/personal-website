@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
-import SkillIcon from './skill-icon';
+import SkillIcon from '../../general/skill-icon';
 import cSharpIcon from '../../../Images/Icons/c-sharp-c.svg';
 import unityIcon from "../../../Images/Icons/unity-3d.svg";
 import javascriptIcon from "../../../Images/Icons/javascript-js.svg";
@@ -11,12 +11,12 @@ import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { ColorPalette } from '../../../library/colorPalette';
-import { BackgroundRow, CenteredTitle, InfoSection, ZIndexCol } from '../../../library/styleLibrary';
+import { BackgroundRow, CenteredTitle, AutoMarginContainer, ZIndexCol } from '../../../library/styleLibrary';
 import { ParagraphText } from '../../../library/styleLibrary';
 import Resume from "../../../library/Hamish Harrison Resume.pdf";
 
 const ExperienceSection = () => {
-   return (<InfoSection id="experience" padding="200px">
+   return (<AutoMarginContainer id="experience" padding="200px">
     <Row>
         <Col>
             <CenteredTitle>Experience</CenteredTitle>
@@ -46,13 +46,21 @@ const ExperienceSection = () => {
                 <StyledListItem>Websites utilzing React, Javascript, Google Firebase Cloud, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
             </ul>
             <ParagraphText>
-                You can view more information via my resume <a href={Resume} target="_blank">here</a>.
+                You can view more information via my <ResumeTag href={Resume} rel="noreferrer" target="_blank">resume here</ResumeTag>.
             </ParagraphText>
         </ZIndexCol>
     </BackgroundRow>
-</InfoSection>);
+</AutoMarginContainer>);
 }
 export default ExperienceSection;
+
+const ResumeTag = styled.a`
+color: ${ColorPalette.tertiary};
+
+&:hover{
+    color: ${ColorPalette.primary};
+  }
+`
 
 const StyledListItem = styled.li`
 font-size: clamp(10px, 4vw, 25px);

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import styled from 'styled-components';
+import { CenteredTitle } from '../../../library/styleLibrary';
+import ProjectCard from './project-card';
 import { 
     TeamUnbreakable, 
     HIMALAYASTrial, 
@@ -13,8 +15,6 @@ import {
     HamlicksWebsite,
     GymnasticTrial
 } from '../../../library/projectLibrary';
-import { CenteredTitle } from '../../../library/styleLibrary';
-import ProjectCard from './project-card';
 
 const ProjectPage = () => {
 

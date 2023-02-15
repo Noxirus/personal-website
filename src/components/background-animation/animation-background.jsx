@@ -1,15 +1,13 @@
 import React from 'react';
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import { Lerp } from '../../../library/functionLibrary';
+import { Lerp } from '../../library/functionLibrary';
 import { ball } from './ball';
-import { ColorPalette } from '../../../library/colorPalette';
 
 var maxBalls = 6;
 
 const AnimationBackground = () => {
   
-
     useEffect(() => {
         const canvas = document.getElementById("canvas");
         canvas.width = window.innerWidth;

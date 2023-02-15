@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
-import { ColorPalette } from '../../../library/colorPalette';
-import { IsInViewport } from '../../../library/functionLibrary';
-import { flipIcon } from '../../../library/animations';
+import { ColorPalette } from '../../library/colorPalette';
+import { IsInViewport } from '../../library/functionLibrary';
+import { flipIcon } from '../../library/animations';
 
 const SkillIcon = ({imgRef, altText, delay}) => {
     const iconRef = useRef(null);

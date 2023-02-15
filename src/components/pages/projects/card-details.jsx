@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Col } from 'reactstrap';
 import { ColorPalette } from '../../../library/colorPalette';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ZIndexCol } from '../../../library/styleLibrary';
 
 const CardDetails = ({details}) => {
-
-   return (<TextCol>
+  
+   return (<ZIndexCol>
     <Title>{details.title}<PopOutIcon icon={faUpRightFromSquare} onClick={() => window.open(details.link)} /></Title>
     <SecondaryText>
       Roles: {details.roles}
@@ -18,8 +18,9 @@ const CardDetails = ({details}) => {
     <ParagraphText>
       {details.description}
     </ParagraphText>
-</TextCol>);
+</ZIndexCol>);
 }
+
 export default CardDetails;
 
 const Title = styled.h1`
@@ -45,8 +46,4 @@ margin-left: 10px;
   cursor: pointer;
   color: ${ColorPalette.primary}
 }
-`
-
-const TextCol = styled(Col)`
-z-index: 2;
 `

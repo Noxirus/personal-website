@@ -1,14 +1,14 @@
 import React from 'react';
-import { Col, Row } from 'reactstrap';
+import { Row } from 'reactstrap';
 import styled from 'styled-components';
 import { ColorPalette } from '../../library/colorPalette';
-import { InfoSection, ZIndexCol} from '../../library/styleLibrary';
+import { AutoMarginContainer, ZIndexCol} from '../../library/styleLibrary';
 import { SocialMediaIcon } from '../../library/styleLibrary';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
-   return (<InfoSection padding="200px">
+   return (<AutoMarginContainer padding="200px">
     <Row>
         <ZIndexCol>
             <FooterText>
@@ -18,7 +18,7 @@ const Footer = () => {
             
         </ZIndexCol>
     </Row>
-   </InfoSection>);
+   </AutoMarginContainer>);
 }
 export default Footer;
 

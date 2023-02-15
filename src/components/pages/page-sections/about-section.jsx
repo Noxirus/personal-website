@@ -2,12 +2,11 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
 import { ColorPalette } from '../../../library/colorPalette';
-import { BackgroundRow, CenteredTitle, InfoSection } from '../../../library/styleLibrary';
+import { CenteredTitle, AutoMarginContainer } from '../../../library/styleLibrary';
 import Headshot from "../../../Images/HamishHeadshot.webp";
 
 const AboutSection = () => {
-
-   return (<InfoSection id="about" padding="200px">
+   return (<AutoMarginContainer id="about" padding="200px">
     <Row>
         <Col>
             <CenteredTitle>About</CenteredTitle>
@@ -39,8 +38,9 @@ const AboutSection = () => {
             <PersonalImage title="Hamish Harrison" alt="Hamish Harrison" src={Headshot} />
         </StyledImageCol>
     </Row>
-</InfoSection>);
+</AutoMarginContainer>);
 }
+
 export default AboutSection;
 
 const StyledAboutCol = styled(Col)`
