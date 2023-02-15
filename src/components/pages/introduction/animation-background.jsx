@@ -7,12 +7,16 @@ import { ColorPalette } from '../../../library/colorPalette';
 
 var maxBalls = 6;
 
-const IntroCanvas = () => {
+const AnimationBackground = () => {
   
 
     useEffect(() => {
         const canvas = document.getElementById("canvas");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
         const ctx = canvas.getContext("2d");
+
+        const listenerCanvas = document.getElementById("listenerCanvas");
              
         var fadingOutBalls = [];
         var balls = [];
@@ -59,7 +63,7 @@ const IntroCanvas = () => {
         }
     }
 
-    canvas.addEventListener("click", function(event){
+    listenerCanvas.addEventListener("click", function(event){
         var mousePos = getMousePos(canvas, event);
         var x = mousePos.x / canvas.offsetWidth;
         var y = mousePos.y / canvas.offsetHeight;
@@ -96,13 +100,25 @@ const IntroCanvas = () => {
             y: evt.clientY - rect.top
         };
     }
-   return (<StyledCanvas id="canvas"></StyledCanvas>);
+   return (<React.Fragment>
+        <ListenerCanvas id="listenerCanvas" />
+        <StyledCanvas id="canvas" />
+    </React.Fragment>);
 }
-export default IntroCanvas;
+export default AnimationBackground;
+
+const ListenerCanvas = styled.canvas`
+width: 100%;
+height: 100%;
+padding: 0px;
+position: fixed;
+z-index: 1;
+`
 
 const StyledCanvas = styled.canvas`
 width: 100%;
 height: 100%;
-border-style: solid;
-border-color: ${ColorPalette.secondary}
+padding: 0px;
+position: fixed;
+z-index: -1;
 `

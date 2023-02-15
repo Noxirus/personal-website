@@ -36,5 +36,5 @@ object-fit:cover;
 `
 
 const ImageCol = styled(Col)`
-
+z-index: 2;
 `

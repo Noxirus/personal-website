@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import IntroCanvas from '../introduction/animation-background';
 import IntroductionSection from '../introduction/introduction-section';
 import ProjectSection from './project-section';
 

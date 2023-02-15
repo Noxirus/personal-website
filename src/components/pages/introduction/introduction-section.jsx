@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { fadeIn } from '../../../library/animations';
 import { ColorPalette } from '../../../library/colorPalette';
 import { InfoSection, ParagraphText, PrimaryText, SecondaryText } from '../../../library/styleLibrary';
-import IntroCanvas from './intro-canvas';
+import IntroCanvas from './animation-background';
 
 const initialState = css `opacity: 0; animation-fill-mode: forwards;`
 const animationString = css `${fadeIn} .5s linear ${props => props.delay ? props.delay : "0s"}`;
@@ -25,7 +25,7 @@ const IntroductionSection = () => {
             </ParagraphText>        
         </StyledAboutCol>
         <Col>
-            <IntroCanvas />
+            
         </Col>
     </Row>
 </InfoSection>);

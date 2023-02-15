@@ -48,5 +48,5 @@ margin-left: 10px;
 `
 
 const TextCol = styled(Col)`
-
+z-index: 2;
 `

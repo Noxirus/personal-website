@@ -11,7 +11,7 @@ import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { ColorPalette } from '../../../library/colorPalette';
-import { CenteredTitle, InfoSection } from '../../../library/styleLibrary';
+import { BackgroundRow, CenteredTitle, InfoSection, ZIndexCol } from '../../../library/styleLibrary';
 import { ParagraphText } from '../../../library/styleLibrary';
 import Resume from "../../../library/Hamish Harrison Resume.pdf";
 
@@ -36,8 +36,8 @@ const ExperienceSection = () => {
         </StyledIconCol>  
     </Row>
     <br />
-    <Row>
-        <Col>
+    <BackgroundRow>
+        <ZIndexCol>
             <ParagraphText centered={true}>
                 I have been in professional full stack development for 2 years. The technologies I have primarily worked on include: 
             </ParagraphText>
@@ -48,8 +48,8 @@ const ExperienceSection = () => {
             <ParagraphText>
                 You can view more information via my resume <a href={Resume} target="_blank">here</a>.
             </ParagraphText>
-        </Col>
-    </Row>
+        </ZIndexCol>
+    </BackgroundRow>
 </InfoSection>);
 }
 export default ExperienceSection;
@@ -63,5 +63,6 @@ const StyledIconCol = styled(Col)`
 margin-left:auto;
 margin-right:auto;
 display:block;
-text-align:center
+text-align:center;
+z-index: 2;
 `

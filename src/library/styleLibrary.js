@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ColorPalette } from './colorPalette';
-import { Container, Button, Col } from 'reactstrap';
+import { Container, Button, Col, Row } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { popIn } from './animations';
 
@@ -52,6 +52,18 @@ border-color: ${ColorPalette.secondary};
 background-color: ${ColorPalette.tertiary};
 `
 
+
+export const BackgroundRow = styled(Row)`
+margin: 15px;
+padding: 15px;
+background-color: ${ColorPalette.quatriary};
+box-shadow: 5px 5px ${ColorPalette.grey};
+`
+
+export const ZIndexCol = styled(Col)`
+z-index: 2;
+`
+
 export const SocialMediaIcon = styled(FontAwesomeIcon)`
   margin-top: 10px;
   margin-bottom: 10px;
@@ -69,4 +81,5 @@ export const SocialMediaIcon = styled(FontAwesomeIcon)`
 
 export const CenteredCol = styled(Col)`
 text-align: center;
+z-index: 2;
 `

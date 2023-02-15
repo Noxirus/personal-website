@@ -12,8 +12,8 @@ export class ball  {
     name = "";
     x;
     y;
-    vx = Math.random() * .3;
-    vy = Math.random() * .3;
+    vx = Math.random() * .1;
+    vy = Math.random() * .1;
     radius = 10
 
     baseColor

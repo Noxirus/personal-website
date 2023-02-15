@@ -8,11 +8,13 @@ import ProjectPage from './components/pages/projects/project-archive';
 import styled from 'styled-components';
 import { ColorPalette } from './library/colorPalette';
 import Footer from './components/general/footer';
+import AnimationBackground from './components/pages/introduction/animation-background';
 
 function App() {
   return (
     <React.Fragment>
       <NavigationBar />
+      <AnimationBackground />
       <BackgroundDiv />
         <Routes>
           <Route path="/projects" element={<ProjectPage />} />
@@ -31,5 +33,5 @@ background-color: ${ColorPalette.dark};
 width:100%;
 height:100%;
 position:fixed;
-z-index:-5;
+z-index:-10;
 `

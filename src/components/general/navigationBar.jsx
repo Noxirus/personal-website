@@ -91,5 +91,5 @@ const StyledNavbar = styled(Navbar)`
   width: 100%;
   box-shadow: 0px 2px ${ColorPalette.primary};
   position: fixed;
-  z-index:1;
+  z-index: 5;
 `
