@@ -3,7 +3,7 @@ const OrangeAndTeal ={
     secondary: "rgb(248, 188, 36)",
     tertiary: "rgb(223, 248, 235)",
     quatriary: "rgb(10, 35, 66)",
-    dark: "rgb(49, 82, 91)",
+    dark: "rgb(0, 82, 91)",
     grey: "rgb(29, 29, 29)",
 }
 
