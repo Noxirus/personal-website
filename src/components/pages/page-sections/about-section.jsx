@@ -13,7 +13,7 @@ const AboutSection = () => {
         </Col>
     </Row>
     <br />
-    <Row>
+    <PaddingRow>
         <StyledAboutCol xl="6" md="12">
             <ParagraphText>
             My name is Hamish and I have a passion for building and developing software. Originally, I studied Linguistics (Major) with a Musical Minor at the University of 
@@ -34,30 +34,29 @@ const AboutSection = () => {
             I am looking forward to seeing the differences between the two major Engines!
             </ParagraphText>      
         </StyledAboutCol>
-        <StyledImageCol>
+        <Col>
             <PersonalImage title="Hamish Harrison" alt="Hamish Harrison" src={Headshot} />
-        </StyledImageCol>
-    </Row>
+        </Col>
+    </PaddingRow>
 </AutoMarginContainer>);
 }
 
 export default AboutSection;
 
 const StyledAboutCol = styled(Col)`
-margin: 15px;
+margin-bottom: 15px;
 padding: 15px;
-padding-right: 50px;
 background-color: ${ColorPalette.quatriary};
 box-shadow: 5px 5px ${ColorPalette.grey};
 `
 
-const StyledImageCol = styled(Col)`
-margin-right: 10px;
+const PaddingRow = styled(Row)`
+padding: 20px;
 `
 
 const PersonalImage = styled.img`
 width: 100%;
-margin: 15px;
+margin: auto;
 background-size: contain;
 border: 2px solid ${ColorPalette.tertiary};
 `
