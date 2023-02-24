@@ -7,7 +7,6 @@ const AboutSection = React.lazy(() =>import('./page-sections/about-section'));
 const ContactMe = React.lazy(() => import ('./page-sections/contact-me'));
 
 const HomePage = () => {
-
    return (
    <div>
       <IntroductionSection />

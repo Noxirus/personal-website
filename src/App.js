@@ -4,7 +4,6 @@ import React from 'react';
 import NavigationBar from './components/general/navigationBar';
 import HomePage from './components/pages/home-page';
 import NotFound from './components/general/not-found';
-import ProjectPage from './components/pages/projects/project-archive';
 import styled from 'styled-components';
 import { ColorPalette } from './library/colorPalette';
 import Footer from './components/general/footer';
@@ -17,7 +16,6 @@ function App() {
       <AnimationBackground />
       <BackgroundDiv />
         <Routes>
-          <Route path="/projects" element={<ProjectPage />} />
           <Route exact path="/" element={<HomePage />}/>
           <Route path="*" element={<NotFound />} />
         </Routes>

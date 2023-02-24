@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link, scroller } from 'react-scroll';
 import styled from 'styled-components';
 import { ColorPalette } from '../../library/colorPalette';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -20,9 +20,20 @@ const NavigationBar = (args) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
+  const ScrollToTop = () => {
+    scroller.scrollTo('introduction');
+  }
+
    return (
     <StyledNavbar expand="md" {...args}>
-      <StyledNavBrand href="/">Hamish Harrison<br /><StyledNavbarText>Full Stack Developer</StyledNavbarText></StyledNavBrand>
+      <StyledNavBrand onClick={() => ScrollToTop()}>
+          Hamish Harrison
+          <br />
+        <StyledNavbarText>
+          Full Stack Developer
+        </StyledNavbarText>
+      </StyledNavBrand>
+
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar />
@@ -42,6 +53,7 @@ const NavigationBar = (args) => {
 
 export default NavigationBar;
 
+
 const StyledNavItem = styled(NavItem)`
 list-style-type: none;
 animation: ${fadeIn} 1s linear ${props => (props.delay && !props.$collapsed) ? props.delay : "0s"};
@@ -54,7 +66,8 @@ animation-fill-mode: forwards;
 
 const StyledNavBrand = styled(NavbarBrand)`
 &:hover{
-  text-shadow: 2px 2px ${ColorPalette.secondary}; 
+  text-shadow: 2px 2px ${ColorPalette.secondary};
+  cursor: pointer;
 }
 font-size: clamp(25px, 3vw, 30px);
   color: ${ColorPalette.primary};

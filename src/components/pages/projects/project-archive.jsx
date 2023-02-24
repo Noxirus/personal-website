@@ -1,14 +1,7 @@
 import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
-import styled from 'styled-components';
-import { CenteredTitle } from '../../../library/styleLibrary';
 import ProjectCard from './project-card';
 import { 
-    TeamUnbreakable, 
-    HIMALAYASTrial, 
-    PipePuzzles, 
     TheWilfredEscape, 
-    AbandonShip, 
     OmegaProtocol, 
     FinalVerdict, 
     ProjectArtemis,
@@ -17,28 +10,14 @@ import {
 } from '../../../library/projectLibrary';
 
 const ProjectPage = () => {
-
    return (
-    <StyledPage>
-        <Row>
-            <Col>
-                <CenteredTitle>Project Archive</CenteredTitle>
-            </Col>
-        </Row>
-        <ProjectCard details={PipePuzzles} />
+    <div>
         <ProjectCard details={TheWilfredEscape} flipped={true} screenSize={window.innerWidth} />
-        <ProjectCard details={AbandonShip} />
-        <ProjectCard details={FinalVerdict} flipped={true} />
-        <ProjectCard details={TeamUnbreakable} />
-        <ProjectCard details={HIMALAYASTrial} flipped={true} />
-        <ProjectCard details={OmegaProtocol} />
-        <ProjectCard details={ProjectArtemis} flipped={true} />
-        <ProjectCard details={GymnasticTrial} />
-        <ProjectCard details={HamlicksWebsite} flipped={true} />
-   </StyledPage>);
+        <ProjectCard details={FinalVerdict} />
+        <ProjectCard details={OmegaProtocol}  flipped={true}/>
+        <ProjectCard details={ProjectArtemis} />
+        <ProjectCard details={GymnasticTrial} flipped={true} />
+        <ProjectCard details={HamlicksWebsite} />
+    </div>);
 }
 export default ProjectPage;
-
-const StyledPage = styled(Container)`
-padding-top: 150px;
-`

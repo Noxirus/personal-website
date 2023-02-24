@@ -9,7 +9,7 @@ const initialState = css `opacity: 0; animation-fill-mode: forwards;`
 const animationString = css `${fadeIn} .5s linear ${props => props.delay ? props.delay : "0s"}`;
 
 const IntroductionSection = () => {
-   return (<AutoMarginContainer padding="250px">
+   return (<AutoMarginContainer id="introduction" padding="250px">
     <Row>
         <StyledAboutCol xl="6" lg="7" md="12">       
             <SecondaryText initialState={initialState} animation={animationString} delay="0s">Hello! I am</SecondaryText>
