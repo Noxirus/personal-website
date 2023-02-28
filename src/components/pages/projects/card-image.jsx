@@ -20,6 +20,7 @@ const CardImage = ({details}) => {
      alt={details.description}
      title={details.title}
      src={details.img}
+     onClick={() => window.open(details.link)}
    />} 
    </ZIndexCol>);
 }
