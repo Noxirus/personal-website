@@ -30,7 +30,7 @@ const NavigationBar = (args) => {
           Hamish Harrison
           <br />
         <StyledNavbarText>
-          Full Stack Developer
+          Software Developer
         </StyledNavbarText>
       </StyledNavBrand>
 
