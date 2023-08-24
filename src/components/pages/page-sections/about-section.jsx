@@ -16,7 +16,7 @@ const AboutSection = () => {
     <PaddingRow>
         <StyledAboutCol xl="6" md="12">
             <ParagraphText>
-            My name is Hamish and I have a passion for building and developing software. Originally, I studied Linguistics (Major) with a Musical Minor at the University of 
+            My name is Hamish and I have a passion for building and developing software. Originally, I studied Linguistics with a Musical Minor at the University of 
             Calgary. After a few years of Administrative Assistant work, I decided I wanted a career change.
             </ParagraphText>
             <ParagraphText>
@@ -30,8 +30,8 @@ const AboutSection = () => {
             Finally, I helped build two live websites front-end and back-end using React and Firebase.
             </ParagraphText>
             <ParagraphText>
-            In my recent extra curriculars, I have been learning new technologies involving the Unreal Engine/C++, Typescript and 3D modelling using Blender. 
-            I am looking forward to seeing the differences between the two major Engines!
+            Recently I have been working with the Unreal engine. Developing a multiplayer shooter using Unreal's build in networking and replication systems.
+            I have also been learning additional technologies such as Microsoft Azure and Java Springboot.
             </ParagraphText>      
         </StyledAboutCol>
         <Col>

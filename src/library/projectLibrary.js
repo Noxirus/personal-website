@@ -9,6 +9,17 @@ import FinalVerdictFacade from "../Images/FinalVerdictFacade.webp";
 import GymnasticFacade from "../Images/GymnasticFacade.webp";
 import OmegaFacade from "../Images/OmegaFacade.webp";
 import WilfredEscapeFacade from "../Images/WilfredEscapeFacade.webp";
+import SumoSurpriseFacade from "../Images/Cartoon-Sumo.webp";
+
+export const SumoSurprise = {
+    title: "Sumo Surprise",
+    tech: "Unreal Engine, C++, Github, Git LFS",
+    roles: "Programmer",
+    img:  SumoSurpriseFacade,
+    link: "https://dirkrugged.itch.io/sumo-surprise",
+    description: "Completed during the Alberta Game Jam, August 18th - 20th. " +
+    "Multiplayer game coded using Unreal C++. Push your opponents out of the arena while trying to keep your pants on!"
+}
 
 export const TeamUnbreakable = {
     title: "Team Unbreakable",

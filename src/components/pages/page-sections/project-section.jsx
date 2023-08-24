@@ -5,7 +5,8 @@ import ProjectCard from '../projects/project-card';
 import { 
     PipePuzzles, 
     AbandonShip,
-    TeamUnbreakable, 
+    TeamUnbreakable,
+    SumoSurprise
 } from '../../../library/projectLibrary';
 import ProjectPage from '../projects/project-archive';
 
@@ -18,6 +19,7 @@ const ProjectSection = () => {
             <CenteredTitle>Project Library</CenteredTitle>
         </Col>
         <br />
+        <ProjectCard details={SumoSurprise} flipped={true} />
         <ProjectCard details={PipePuzzles} />
         <ProjectCard details={AbandonShip} flipped={true} />
         <ProjectCard details={TeamUnbreakable} />

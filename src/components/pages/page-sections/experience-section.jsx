@@ -9,6 +9,7 @@ import gitHubIcon from "../../../Images/Icons/github.svg";
 import firebaseIcon from "../../../Images/Icons/file-type-firebase.svg";
 import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
+import unrealEngineIcon from "../../../Images/Icons/unreal-engine.svg";
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { ColorPalette } from '../../../library/colorPalette';
 import { BackgroundRow, CenteredTitle, AutoMarginContainer, ZIndexCol } from '../../../library/styleLibrary';
@@ -29,10 +30,11 @@ const ExperienceSection = () => {
             <SkillIcon delay=".1s" imgRef={javascriptIcon} altText="Javascript" />
             <SkillIcon delay=".15s" imgRef={visualStudioIcon} altText="Visual Studio" />
             <SkillIcon delay=".2s" imgRef={unityIcon} altText="Unity" />
-            <SkillIcon delay=".25s" imgRef={reactIcon} altText="React" />
-            <SkillIcon delay=".3s" imgRef={gitHubIcon} altText="Github" />
-            <SkillIcon delay=".35s" imgRef={firebaseIcon} altText="Firebase" />
-            <SkillIcon delay=".4s" imgRef={npmIcon} altText="NPM" />
+            <SkillIcon delay=".25s" imgRef={unrealEngineIcon} altText="Unreal" />
+            <SkillIcon delay=".3s" imgRef={reactIcon} altText="React" />
+            <SkillIcon delay=".35s" imgRef={gitHubIcon} altText="Github" />
+            <SkillIcon delay=".4s" imgRef={firebaseIcon} altText="Firebase" />
+            <SkillIcon delay=".45s" imgRef={npmIcon} altText="NPM" />
         </StyledIconCol>  
     </Row>
     <br />
@@ -44,6 +46,7 @@ const ExperienceSection = () => {
             <ul>
                 <StyledListItem>Unity WebGL/Android games utilizing: C#/.NET, Google Firebase Cloud, Google Play Console, Google Admob Monetization.</StyledListItem>
                 <StyledListItem>Websites utilzing React, Javascript, Google Firebase Cloud, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
+                <StyledListItem>Current technologies I have been working with are: Unreal Engine/C++, Microsoft Azure, Java Springboot</StyledListItem>
             </ul>
             <ParagraphText>
                 You can view more information via my <ResumeTag href={Resume} rel="noreferrer" target="_blank">resume here</ResumeTag>.
