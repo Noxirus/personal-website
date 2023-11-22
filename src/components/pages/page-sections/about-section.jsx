@@ -30,8 +30,7 @@ const AboutSection = () => {
             Finally, I helped build two live websites front-end and back-end using React and Firebase.
             </ParagraphText>
             <ParagraphText>
-            Recently I have been working with the Unreal engine. Developing a multiplayer shooter using Unreal's build in networking and replication systems.
-            I have also been learning additional technologies such as Microsoft Azure and Java Springboot.
+            Recently I have been teaching Game Development at Bow Valley College and working on personal game projects specifically focused on the Unreal Engine.
             </ParagraphText>      
         </StyledAboutCol>
         <Col>

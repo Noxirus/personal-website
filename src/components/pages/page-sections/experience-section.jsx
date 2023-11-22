@@ -10,6 +10,7 @@ import firebaseIcon from "../../../Images/Icons/file-type-firebase.svg";
 import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import unrealEngineIcon from "../../../Images/Icons/unreal-engine.svg";
+import cPlusPlusIcon from "../../../Images/Icons/CPlusPlusIcon.png"
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { ColorPalette } from '../../../library/colorPalette';
 import { BackgroundRow, CenteredTitle, AutoMarginContainer, ZIndexCol } from '../../../library/styleLibrary';
@@ -26,11 +27,12 @@ const ExperienceSection = () => {
     <br />
     <Row>
         <StyledIconCol>
-            <SkillIcon delay=".05s" imgRef={cSharpIcon} altText="C#" />
-            <SkillIcon delay=".1s" imgRef={javascriptIcon} altText="Javascript" />
-            <SkillIcon delay=".15s" imgRef={visualStudioIcon} altText="Visual Studio" />
-            <SkillIcon delay=".2s" imgRef={unityIcon} altText="Unity" />
-            <SkillIcon delay=".25s" imgRef={unrealEngineIcon} altText="Unreal" />
+            <SkillIcon delay=".00s" imgRef={unrealEngineIcon} altText="Unreal" />
+            <SkillIcon delay=".05s" imgRef={cPlusPlusIcon} altText="C++" />
+            <SkillIcon delay=".1s" imgRef={unityIcon} altText="Unity" />
+            <SkillIcon delay=".15s" imgRef={cSharpIcon} altText="C#" />
+            <SkillIcon delay=".2s" imgRef={javascriptIcon} altText="Javascript" />
+            <SkillIcon delay=".25s" imgRef={visualStudioIcon} altText="Visual Studio" />
             <SkillIcon delay=".3s" imgRef={reactIcon} altText="React" />
             <SkillIcon delay=".35s" imgRef={gitHubIcon} altText="Github" />
             <SkillIcon delay=".4s" imgRef={firebaseIcon} altText="Firebase" />
@@ -41,9 +43,10 @@ const ExperienceSection = () => {
     <BackgroundRow>
         <ZIndexCol>
             <ParagraphText centered={true}>
-                I have been in professional full stack development for 2 years. The technologies I have primarily worked on include: 
+                I have been in professional game development for 3 years. The technologies I have primarily worked on include: 
             </ParagraphText>
             <ul>
+                <StyledListItem>Unreal Engine games using C++ and Perforce.</StyledListItem>
                 <StyledListItem>Unity WebGL/Android games utilizing: C#/.NET, Google Firebase Cloud, Google Play Console, Google Admob Monetization.</StyledListItem>
                 <StyledListItem>Websites utilzing React, Javascript, Google Firebase Cloud, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
                 <StyledListItem>Current technologies I have been working with are: Unreal Engine/C++, Microsoft Azure, Java Springboot</StyledListItem>
