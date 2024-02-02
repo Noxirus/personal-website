@@ -10,6 +10,17 @@ import GymnasticFacade from "../Images/GymnasticFacade.webp";
 import OmegaFacade from "../Images/OmegaFacade.webp";
 import WilfredEscapeFacade from "../Images/WilfredEscapeFacade.webp";
 import SumoSurpriseFacade from "../Images/Cartoon-Sumo.webp";
+import BabysFirstNightmareFacade from "../Images/Babys-First-Nightmare.webp";
+
+export const BabysFirstNightmare = {
+    title: "Baby's First Nightmare",
+    tech: "Unreal Engine, C++, Github, Git LFS",
+    roles: "Programmer",
+    img:  BabysFirstNightmareFacade,
+    link: "https://globalgamejam.org/games/2024/babys-first-nightmare-5",
+    description: "Completed during Global Game Jam, January 26th - 28th, 2024. " +
+    "Multiplayer endless runner with randomly chosen tiles to keep each playthrough different."
+}
 
 export const SumoSurprise = {
     title: "Sumo Surprise",
@@ -17,7 +28,7 @@ export const SumoSurprise = {
     roles: "Programmer",
     img:  SumoSurpriseFacade,
     link: "https://dirkrugged.itch.io/sumo-surprise",
-    description: "Completed during the Alberta Game Jam, August 18th - 20th. " +
+    description: "Completed during the Alberta Game Jam, August 18th - 20th, 2023. " +
     "Multiplayer game coded using Unreal C++. Push your opponents out of the arena while trying to keep your pants on!"
 }
 
