@@ -14,7 +14,7 @@ const IntroductionSection = () => {
         <StyledAboutCol xl="6" lg="7" md="12">       
             <SecondaryText initialState={initialState} animation={animationString} delay="0s">Hello! I am</SecondaryText>
             <PrimaryText initialState={initialState} animation={animationString} delay=".5s">Hamish,</PrimaryText>
-            <SecondaryText initialState={initialState} animation={animationString} delay="1s">Game Developer</SecondaryText>
+            <SecondaryText initialState={initialState} animation={animationString} delay="1s">Software Developer</SecondaryText>
             <SecondaryText initialState={initialState} animation={animationString} delay="1.5s">and Teacher</SecondaryText>
             <ParagraphText 
                 colorSet={ColorPalette.tertiary} 

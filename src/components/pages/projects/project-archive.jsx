@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from './project-card';
 import { 
     HIMALAYASTrial,
-    TheWilfredEscape, 
+    MidnightManor, 
     OmegaProtocol, 
     FinalVerdict, 
     ProjectArtemis,
@@ -17,7 +17,7 @@ const ProjectPage = () => {
         <ProjectCard details={TeamUnbreakable} flipped={true}/>
         <ProjectCard details={FinalVerdict} />
         <ProjectCard details={HIMALAYASTrial} flipped={true}/>
-        <ProjectCard details={TheWilfredEscape} />
+        <ProjectCard details={MidnightManor} />
         <ProjectCard details={ProjectArtemis} flipped={true}/>
         <ProjectCard details={OmegaProtocol}  />
         <ProjectCard details={HamlicksWebsite} flipped={true}/>

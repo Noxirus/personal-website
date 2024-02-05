@@ -8,9 +8,9 @@ import ArtemisFacade from "../Images/ArtemisFacade.webp";
 import FinalVerdictFacade from "../Images/FinalVerdictFacade.webp";
 import GymnasticFacade from "../Images/GymnasticFacade.webp";
 import OmegaFacade from "../Images/OmegaFacade.webp";
-import WilfredEscapeFacade from "../Images/WilfredEscapeFacade.webp";
 import SumoSurpriseFacade from "../Images/Cartoon-Sumo.webp";
 import BabysFirstNightmareFacade from "../Images/Babys-First-Nightmare.webp";
+import MidnightManorImage from "../Images/MidnightManor.webp"
 
 export const BabysFirstNightmare = {
     title: "Baby's First Nightmare",
@@ -61,13 +61,12 @@ export const PipePuzzles = {
     description: "Mobile puzzle game with increasing difficulty and mechanics. Contains a variety of puzzle environments with 3D interaction. Released on the Google Play Store.",
 }
 
-export const TheWilfredEscape = {
-    title: "The Wilfred Escape",
+export const MidnightManor = {
+    title: "Midnight Manor",
     tech: "Unity, C#, WebGL, React, Firebase",
     roles: "Core Programmer, Designer",
-    img: WilfredEscapeFacade,
-    videoUrl: "https://www.youtube.com/embed/RhE8UD6vo0U",
-    link: "https://deleptual.ca/halloween-2022",
+    img: MidnightManorImage,
+    link: "https://www.monikerpartners.com/virtual-games/halloween-escape-room",
     description: "Halloween themed escape room. Contains various puzzle elements and spooky events! Synchronized across each team members browser.",
 }
 
@@ -86,7 +85,7 @@ export const OmegaProtocol = {
     tech: "Unity, C#, WebGL, React, Firebase",
     roles: "Programmer",
     img: OmegaFacade,
-    link: "https://www.monikerpartners.com/virtual-games/omega-protocol",
+    link: "https://player.vimeo.com/video/648700654",
     videoUrl: "https://player.vimeo.com/video/648700654",
     description: "Digital escape room. Solve puzzles and learn about the current situation happening around you."
 }
@@ -107,7 +106,7 @@ export const ProjectArtemis = {
     roles: "Core Programmer, Designer",
     img: ArtemisFacade,
     videoUrl: "https://player.vimeo.com/video/422527690",
-    link: "https://www.monikerpartners.com/virtual-games/project-artemis",
+    link: "https://player.vimeo.com/video/422527690",
     description: "2D browser based game. Search information about your situation on the moon to determine the necessary steps for survival.",
 }
 
