@@ -1,4 +1,3 @@
-import './App.css';
 import { Routes, Route } from "react-router-dom";
 import React from 'react';
 import NavigationBar from './components/general/navigationBar';
@@ -29,7 +28,9 @@ export default App;
 const BackgroundDiv = styled.div`
 background-color: ${ColorPalette.dark};
 width:100%;
-height:100%;
+height:100vh;
 position:fixed;
 z-index:-10;
+top: 0;
+left: 0;
 `

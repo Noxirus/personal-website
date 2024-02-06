@@ -10,7 +10,7 @@ import firebaseIcon from "../../../Images/Icons/file-type-firebase.svg";
 import reactIcon from "../../../Images/Icons/react.svg";
 import visualStudioIcon from "../../../Images/Icons/visual-studio.svg";
 import unrealEngineIcon from "../../../Images/Icons/unreal-engine.svg";
-import cPlusPlusIcon from "../../../Images/Icons/CPlusPlusIcon.png"
+import cPlusPlusIcon from "../../../Images/Icons/CPlusPlusIcon.svg"
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { ColorPalette } from '../../../library/colorPalette';
 import { BackgroundRow, CenteredTitle, AutoMarginContainer, ZIndexCol } from '../../../library/styleLibrary';

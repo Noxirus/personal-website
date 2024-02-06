@@ -7,7 +7,6 @@ import {
     AbandonShip,
     TeamUnbreakable,
     SumoSurprise,
-    BabysFirstNightmare
 } from '../../../library/projectLibrary';
 import ProjectPage from '../projects/project-archive';
 
