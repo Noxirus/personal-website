@@ -18,10 +18,10 @@ const AnimationBackground = () => {
              
         var fadingOutBalls = [];
         var balls = [];
-        balls.push(new ball("Ball 1", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
-        balls.push(new ball("Ball 2", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
-        balls.push(new ball("Ball 3", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
-        balls.push(new ball("Ball 4", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height)));
+        balls.push(new ball("Ball 1", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height), balls));
+        balls.push(new ball("Ball 2", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height), balls));
+        balls.push(new ball("Ball 3", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height), balls));
+        balls.push(new ball("Ball 4", Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height), balls));
 
         var ballIterator = balls.length + 1;
         function moveBalls() {
@@ -52,10 +52,25 @@ const AnimationBackground = () => {
         for(let i = 0; i < ballArray.length; i++){
             for(let x = i + 1; x < ballArray.length; x++){
                 ctx.beginPath()
-                ctx.moveTo(ballArray[i].x, ballArray[i].y);
-                ctx.lineTo(Lerp(ballArray[i].x, ballArray[x].x, (ballArray[x].animationTime / 100)), Lerp(ballArray[i].y, ballArray[x].y, (ballArray[x].animationTime / 100)));
+                ctx.moveTo(ballArray[i].x, ballArray[i].y); 
+                ctx.lineTo(
+                    Lerp(ballArray[i].x, ballArray[x].x, (ballArray[x].animationTime / 100)), 
+                    Lerp(ballArray[i].y, ballArray[x].y, (ballArray[x].animationTime / 100))
+                );
+
                 ctx.lineWidth = 1;
-                ctx.strokeStyle = ballArray[i].returnColor();
+                
+                var colorGradient = ctx.createLinearGradient(
+                    ballArray[i].x,
+                    ballArray[i].y,
+                    ballArray[x].x,
+                    ballArray[x].y
+                );
+
+                colorGradient.addColorStop(0, ballArray[i].returnColor());
+                colorGradient.addColorStop(1, ballArray[x].returnColor());
+
+                ctx.strokeStyle = colorGradient;
                 ctx.stroke();
             }
         }
@@ -84,7 +99,7 @@ const AnimationBackground = () => {
         })
 
         if(balls.length >= maxBalls || clickedCircle){return;}
-        balls.push(new ball("Ball " + ballIterator, x, y));
+        balls.push(new ball("Ball " + ballIterator, x, y, balls));
         ballIterator++;
     })
     

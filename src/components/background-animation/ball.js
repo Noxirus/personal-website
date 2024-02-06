@@ -1,11 +1,11 @@
 import { ColorPalette } from '../../library/colorPalette';
 
 export class ball  {
-    constructor(name, x, y){
+    constructor(name, x, y, ballPool){
         this.name = name;
         this.x = x;
         this.y = y;
-        this.baseColor = (Math.floor(Math.random() * 2) === 0 ? ColorPalette.primary : ColorPalette.tertiary)
+        this.baseColor = this.chooseThemeColor(ballPool);
         this.alphaColor = this.baseColor.substring(0, this.baseColor.length - 1);
         this.alphaColor += ","
     }
@@ -68,6 +68,27 @@ export class ball  {
         canvas.stroke();
         canvas.closePath();
         canvas.fill();
+    }
+
+    chooseThemeColor(ballPool){
+        var colorMap = new Map([[ColorPalette.primary, 0],[ColorPalette.quatriary, 0],[ColorPalette.tertiary, 0]]);
+
+        for (var i = 0; i < ballPool.length; i++) {
+            colorMap.set(ballPool[i].baseColor, colorMap.get(ballPool[i].baseColor) + 1);
+        }
+
+        var smallestBallKvp;
+        colorMap.forEach((color, amount) => {
+            if (!smallestBallKvp || color < smallestBallKvp[1]) {
+                smallestBallKvp = [amount, color];
+            }
+        });
+
+        if (smallestBallKvp) {
+            return smallestBallKvp[0];
+        } else {
+            return Math.floor(Math.random() * 2) === 0 ? ColorPalette.primary : ColorPalette.tertiary;
+        }
     }
 
     returnColor(){

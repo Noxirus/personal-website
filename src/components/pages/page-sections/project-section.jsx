@@ -20,10 +20,10 @@ const ProjectSection = () => {
             <CenteredTitle>Project Library</CenteredTitle>
         </Col>
         <br />
-        <ProjectCard details={SumoSurprise} flipped={true} />
-        <ProjectCard details={PipePuzzles} />
         <ProjectCard details={AbandonShip} flipped={true} />
-        <ProjectCard details={BabysFirstNightmare}/>
+        <ProjectCard details={PipePuzzles} />
+        <ProjectCard details={TeamUnbreakable} flipped={true}/>
+        <ProjectCard details={SumoSurprise}/>
         {viewingAllProjects && <ProjectPage />}
         <Row>
             <CenteredCol>
