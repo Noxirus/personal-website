@@ -20,7 +20,7 @@ export const CGDA = {
     link: "https://www.calgary.games/",
     bulletPoints: ["Director on the Board.",
         "Hosting monthly meetup events focused on the Unreal Engine.",
-        "Heavily invested in community engagement."
+        "Actively engaged in community building."
     ],
     alt: "Calgary Game Developers Association is a non profit organization determined to build a stronger gaming community."
 }
@@ -30,15 +30,16 @@ export const NiceAxeGames = {
     img: NiceAxeLogo,
     link: "https://www.niceaxegames.com/",
     bulletPoints: ["Unreal Engine Programmer and Designer.",
-        "Supporting in the development of online game systems using Unreal Engine blueprints."
+        "Assisting in the development of online game systems using Unreal Engine Blueprints."
+        
     ],
     alt: "Nice Axe Games, building fun multiplayer experiences with the Unreal Engine"
 }
 
 export const OtherExperience = {
     name: "Additional Skills",
-    bulletPoints: ["Unreal Engine games using C++ and Perforce.",
-        "Unity WebGL/Android games utilizing: C#/.NET, Google Firebase Cloud, Google Play Console, Google Admob Monetization.",
-        "Websites utilzing React, Javascript, Google Firebase Cloud, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS."
+    bulletPoints: ["Developing Unreal Engine games using C++ and Perforce.",
+        "Building Unity WebGL/Android games utilizing C#/.NET, Google Firebase Cloud, Google Play Console, and Google AdMob Monetization.",
+        "Developing websites using React, JavaScript, Google Firebase Cloud, NPM, Express, Node.js, MongoDB, JSON, HTML, and CSS."
     ]
 }

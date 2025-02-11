@@ -13,11 +13,7 @@ import unrealEngineIcon from "../../../Images/Icons/unreal-engine.svg";
 import cPlusPlusIcon from "../../../Images/Icons/CPlusPlusIcon.svg"
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { ColorPalette } from '../../../library/colorPalette';
-import { CenteredTitle, AutoMarginContainer, ZIndexCol, PopOutIcon, StyledCard, CardImage, ImageWrapper, SecondaryText, StyledListItem } from '../../../library/styleLibrary';
-import { ParagraphText } from '../../../library/styleLibrary';
-import Resume from "../../../library/Hamish Harrison Resume.pdf";
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import BVCLogo from "../../../Images/BVCLogo.webp";
+import { CenteredTitle, AutoMarginContainer } from '../../../library/styleLibrary';
 import ExperienceCard from '../experience/experience-card';
 import { BowValleyCollege, CGDA, NiceAxeGames, OtherExperience } from '../../../library/experienceLibrary';
 

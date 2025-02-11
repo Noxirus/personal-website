@@ -1,14 +1,16 @@
 import React from 'react';
-import { CardImage, ImageWrapper, PopOutIcon, SecondaryText, StyledCard, StyledListItem, ZIndexCol } from '../../../library/styleLibrary';
+import { CardImage, ImageWrapper, PopOutIcon, StyledCard, StyledListItem, ZIndexCol } from '../../../library/styleLibrary';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
+import { ColorPalette } from '../../../library/colorPalette';
 
 const ExperienceCard = ({details}) => {
 
    return (<StyledCard>
     <ZIndexCol>
-        <SecondaryText>
-            {details.name} {details.link && <PopOutIcon icon={faUpRightFromSquare} onClick={() => window.open(details.link)}  />}
-        </SecondaryText>
+        <ExperienceTitle>
+            {details.name} {details.link && <PopIcon icon={faUpRightFromSquare} onClick={() => window.open(details.link)}  />}
+        </ExperienceTitle>
         <ul>
             {details.bulletPoints.map((information, key) => (
                 <StyledListItem key={key}>{information}</StyledListItem>
@@ -28,3 +30,14 @@ const ExperienceCard = ({details}) => {
    </StyledCard>);
 }
 export default ExperienceCard;
+
+const PopIcon = styled(PopOutIcon)`
+color: ${ColorPalette.tertiary}
+`
+
+const ExperienceTitle = styled.h3`
+font-size: clamp(20px, 6vw, 35px);
+color: ${ColorPalette.secondary};
+animation: ${props => props.animation ? props.animation : ""};
+${props => props.initialState ? props.initialState : ""};
+`
