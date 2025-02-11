@@ -1,27 +1,23 @@
 import React from 'react';
 import ProjectCard from './project-card';
 import { 
-    HIMALAYASTrial,
-    MidnightManor, 
     OmegaProtocol, 
     FinalVerdict, 
     ProjectArtemis,
     HamlicksWebsite,
     GymnasticTrial,
-    BabysFirstNightmare
+    AbandonShip
 } from '../../../library/projectLibrary';
 
 const ProjectPage = () => {
    return (
     <div>
-        <ProjectCard details={BabysFirstNightmare} flipped={true}/>
-        <ProjectCard details={MidnightManor} />
-        <ProjectCard details={HIMALAYASTrial} flipped={true}/>
-        <ProjectCard details={FinalVerdict} />
-        <ProjectCard details={ProjectArtemis} flipped={true}/>
-        <ProjectCard details={OmegaProtocol}  />
-        <ProjectCard details={HamlicksWebsite} flipped={true}/>
-        <ProjectCard details={GymnasticTrial} />
+        <ProjectCard details={AbandonShip}/>
+        <ProjectCard details={FinalVerdict}  flipped={true} />
+        <ProjectCard details={ProjectArtemis} />
+        <ProjectCard details={OmegaProtocol}  flipped={true}/>
+        <ProjectCard details={HamlicksWebsite} />
+        <ProjectCard details={GymnasticTrial} flipped={true}/>
     </div>);
 }
 export default ProjectPage;

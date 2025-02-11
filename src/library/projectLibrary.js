@@ -1,8 +1,6 @@
-import TeamUnbreakableImage from "../Images/TeamUnbreakable.webp";
-import HIMALAYASImage from "../Images/HIMALAYAS.webp";
 import HamlicksImage from "../Images/Hamlicks.webp";
 
-import PipePuzzleFacade from "../Images/PipePuzzlesFacade.webp";
+import PipePuzzleIcon from "../Images/PipePuzzleIcon.webp";
 import AbandonShipFacade from "../Images/AbandonShipFacade.webp";
 import ArtemisFacade from "../Images/ArtemisFacade.webp";
 import FinalVerdictFacade from "../Images/FinalVerdictFacade.webp";
@@ -10,7 +8,17 @@ import GymnasticFacade from "../Images/GymnasticFacade.webp";
 import OmegaFacade from "../Images/OmegaFacade.webp";
 import SumoSurpriseFacade from "../Images/Cartoon-Sumo.webp";
 import BabysFirstNightmareFacade from "../Images/Babys-First-Nightmare.webp";
-import MidnightManorImage from "../Images/MidnightManor.webp"
+import SoapySinkFacade from "../Images/SoapySink.webp"
+
+export const SoapySink = {
+    title: "Soapy Sink",
+    tech: "Unreal Engine, Blueprints, Github, Git LFS",
+    roles: "Programmer, Designer",
+    img:  SoapySinkFacade,
+    link: "https://selsynn.itch.io/soapy-sink",
+    description: "Completed during Global Game Jam, January 24th - 26th, 2025. " +
+    "Uses physics to push bubbes around, the larger the bubbles the more points you get. Beware the duck though!"
+}
 
 export const BabysFirstNightmare = {
     title: "Baby's First Nightmare",
@@ -25,49 +33,20 @@ export const BabysFirstNightmare = {
 export const SumoSurprise = {
     title: "Sumo Surprise",
     tech: "Unreal Engine, C++, Github, Git LFS",
-    roles: "Programmer",
+    roles: "Programmer, Designer",
     img:  SumoSurpriseFacade,
     link: "https://dirkrugged.itch.io/sumo-surprise",
     description: "Completed during the Alberta Game Jam, August 18th - 20th, 2023. " +
     "Multiplayer game coded using Unreal C++. Push your opponents out of the arena while trying to keep your pants on!"
 }
 
-export const TeamUnbreakable = {
-    title: "Team Unbreakable",
-    tech: "React, CSS, HTML, Firebase",
-    roles: "Web Developer",
-    img: TeamUnbreakableImage,
-    link: "https://www.teamunbreakable.ca/",
-    description: "Website I supported in developing by making it device dynamic. Updated the website aesthetics by using Figma and React Styled Components."
-}
-
-export const HIMALAYASTrial = {
-    title: "HIMALAYAS Trial",
-    tech: "React, CSS, HTML, Firebase",
-    roles: "Lead Web Developer",
-    img: HIMALAYASImage,
-    link: "https://himalayastrial.ca/",
-    description: "Website made from the ground up using React. Contains user profile management, messaging and goal tracking. Contains administrative dashboard " + 
-    "for website content management.",
-}
-
 export const PipePuzzles = {
     title: "Deleptual: Pipe Puzzles",
     tech: "Unity, C#, Android, Firebase, Google Play Services",
     roles: "Programmer, Designer, Composer",
-    img: PipePuzzleFacade,
-    videoUrl: "https://www.youtube.com/embed/lEDCois9gI0",
-    link: "https://play.google.com/store/apps/details?id=com.deleptual.pipepuzzles&hl=en_CA&gl=US",
+    img: PipePuzzleIcon,
+    link: "https://www.youtube.com/shorts/x84Sy6sEvQk",
     description: "Mobile puzzle game with increasing difficulty and mechanics. Contains a variety of puzzle environments with 3D interaction. Released on the Google Play Store.",
-}
-
-export const MidnightManor = {
-    title: "Midnight Manor",
-    tech: "Unity, C#, WebGL, React, Firebase",
-    roles: "Core Programmer, Designer",
-    img: MidnightManorImage,
-    link: "https://www.monikerpartners.com/virtual-games/halloween-escape-room",
-    description: "Halloween themed escape room. Contains various puzzle elements and spooky events! Synchronized across each team members browser.",
 }
 
 export const AbandonShip = {
@@ -76,7 +55,7 @@ export const AbandonShip = {
     roles: "Core Programmer, Designer",
     img: AbandonShipFacade,
     videoUrl: "https://player.vimeo.com/video/680068295",
-    link: "https://www.monikerpartners.com/virtual-games/abandon-ship",
+    link: "https://vimeo.com/680068295",
     description: "Pirate themed escape room. 3D immersive environment with a first person perspective. Contains puzzles and mini games."
 }
 
@@ -96,7 +75,7 @@ export const FinalVerdict = {
     roles: "Core Programmer, Designer",
     img: FinalVerdictFacade,
     videoUrl: "https://player.vimeo.com/video/553373936",
-    link: "https://www.monikerpartners.com/virtual-games/final-verdict",
+    link: "https://player.vimeo.com/video/553373936",
     description: "A jury deliberation game. Explore evidence of a realistic trial to determine if the defendant is guilty.",
 }
 

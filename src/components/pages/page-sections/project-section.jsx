@@ -4,9 +4,9 @@ import { CenteredCol, CenteredTitle, AutoMarginContainer, StyledButton } from '.
 import ProjectCard from '../projects/project-card';
 import { 
     PipePuzzles, 
-    AbandonShip,
-    TeamUnbreakable,
     SumoSurprise,
+    SoapySink,
+    BabysFirstNightmare,
 } from '../../../library/projectLibrary';
 import ProjectPage from '../projects/project-archive';
 
@@ -19,10 +19,10 @@ const ProjectSection = () => {
             <CenteredTitle>Project Library</CenteredTitle>
         </Col>
         <br />
-        <ProjectCard details={AbandonShip} flipped={true} />
-        <ProjectCard details={PipePuzzles} />
-        <ProjectCard details={TeamUnbreakable} flipped={true}/>
-        <ProjectCard details={SumoSurprise}/>
+        <ProjectCard details={SoapySink} />
+        <ProjectCard details={BabysFirstNightmare} flipped={true}/>
+        <ProjectCard details={SumoSurprise} />
+        <ProjectCard details={PipePuzzles} flipped={true}/>
         {viewingAllProjects && <ProjectPage />}
         <Row>
             <CenteredCol>

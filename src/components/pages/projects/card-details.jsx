@@ -8,7 +8,8 @@ import { ZIndexCol } from '../../../library/styleLibrary';
 const CardDetails = ({details}) => {
   
    return (<ZIndexCol>
-    <Title>{details.title}<PopOutIcon icon={faUpRightFromSquare} onClick={() => window.open(details.link)} /></Title>
+    {details.link && <Title>{details.title}<PopOutIcon icon={faUpRightFromSquare} onClick={() => window.open(details.link)} /></Title>}
+    {!details.link && <Title>{details.title}</Title>}
     <SecondaryText>
       Roles: {details.roles}
     </SecondaryText>
