@@ -62,5 +62,5 @@ border: 2px solid ${ColorPalette.tertiary};
 
 const ParagraphText = styled.p`
 font-size: clamp(10px, 4vw, 18px);
-color: ${ColorPalette.tertiary};
+color: ${ColorPalette.secondary};
 `

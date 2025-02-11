@@ -37,7 +37,7 @@ color: ${ColorPalette.tertiary}
 
 const ExperienceTitle = styled.h3`
 font-size: clamp(20px, 6vw, 35px);
-color: ${ColorPalette.secondary};
+color: ${ColorPalette.tertiary};
 animation: ${props => props.animation ? props.animation : ""};
 ${props => props.initialState ? props.initialState : ""};
 `

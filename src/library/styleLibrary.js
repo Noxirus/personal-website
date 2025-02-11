@@ -28,6 +28,8 @@ ${props => props.initialState ? props.initialState : ""};
 export const CenteredTitle = styled.h1`
 font-size: clamp(30px, 6vw, 60px);
 text-align: center;
+text-shadow: 3px 3px ${ColorPalette.grey};
+
 color: ${ColorPalette.primary};
 animation: ${props => props.animation ? props.animation : ""};
 ${props => props.initialState ? props.initialState : ""};
@@ -113,5 +115,5 @@ height: 100%;
 
 export const StyledListItem = styled.li`
 font-size: clamp(10px, 4vw, 25px);
-color: ${ColorPalette.tertiary};
+color: ${ColorPalette.secondary};
 `
