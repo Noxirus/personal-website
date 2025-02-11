@@ -17,7 +17,7 @@ animation-fill-mode: forwards;
 color: ${l.V.tertiary}
 `,k=s.ZP.h3`
 font-size: clamp(20px, 6vw, 35px);
-color: ${l.V.secondary};
+color: ${l.V.tertiary};
 animation: ${e=>e.animation?e.animation:""};
 ${e=>e.initialState?e.initialState:""};
 `,A=i.p+"static/media/BVCLogo.08e76198237570929a73.webp",R=i.p+"static/media/CGDALogo.521015525f56902f3337.webp",T=i.p+"static/media/NiceAxeGamesLogo.6ce8ae76f11a498fc1f1.webp",U={name:"Bow Valley College",img:A,link:"https://bowvalleycollege.ca/programs-courses/centre-for-entertainment-arts/advanced-game-development",bulletPoints:["Teaching in the Advanced Game Development Program.","Game Programming with C# and C++ in the Unity and Unreal Engines.","Source control tools including, Git, Perforce and GitKraken.","Unreal Engine blueprints, game systems, animations and AI behavior."],alt:"Bow Valley College Advanced Game Development Program."},$={name:"Calgary Game Developers Association",img:R,link:"https://www.calgary.games/",bulletPoints:["Director on the Board.","Hosting monthly meetup events focused on the Unreal Engine.","Actively engaged in community building."],alt:"Calgary Game Developers Association is a non profit organization determined to build a stronger gaming community."},E={name:"Nice Axe Games",img:T,link:"https://www.niceaxegames.com/",bulletPoints:["Unreal Engine Programmer and Designer.","Assisting in the development of online game systems using Unreal Engine Blueprints."],alt:"Nice Axe Games, building fun multiplayer experiences with the Unreal Engine"},V={name:"Additional Skills",bulletPoints:["Developing Unreal Engine games using C++ and Perforce.","Building Unity WebGL/Android games utilizing C#/.NET, Google Firebase Cloud, Google Play Console, and Google AdMob Monetization.","Developing websites using React, JavaScript, Google Firebase Cloud, NPM, Express, Node.js, MongoDB, JSON, HTML, and CSS."]},D=()=>(0,d.jsxs)(w.m5,{id:"experience",padding:"200px",children:[(0,d.jsx)(n.X2,{children:(0,d.jsx)(n.JX,{children:(0,d.jsx)(w.EZ,{children:"Experience"})})}),(0,d.jsx)("br",{}),(0,d.jsx)(n.X2,{children:(0,d.jsxs)(S,{children:[(0,d.jsx)(c,{delay:".00s",imgRef:y,altText:"Unreal"}),(0,d.jsx)(c,{delay:".05s",imgRef:j,altText:"C++"}),(0,d.jsx)(c,{delay:".1s",imgRef:p,altText:"Unity"}),(0,d.jsx)(c,{delay:".15s",imgRef:m,altText:"C#"}),(0,d.jsx)(c,{delay:".2s",imgRef:x,altText:"Javascript"}),(0,d.jsx)(c,{delay:".25s",imgRef:h,altText:"Visual Studio"}),(0,d.jsx)(c,{delay:".3s",imgRef:u,altText:"React"}),(0,d.jsx)(c,{delay:".35s",imgRef:f,altText:"Github"}),(0,d.jsx)(c,{delay:".4s",imgRef:b,altText:"Firebase"}),(0,d.jsx)(c,{delay:".45s",imgRef:v,altText:"NPM"})]})}),(0,d.jsx)("br",{}),(0,d.jsx)(P,{details:U}),(0,d.jsx)(P,{details:$}),(0,d.jsx)(P,{details:E}),(0,d.jsx)(P,{details:V})]}),S=(s.ZP.a`
@@ -33,4 +33,4 @@ display:block;
 text-align:center;
 z-index: 2;
 `)}}]);
-//# sourceMappingURL=110.ef274dac.chunk.js.map
+//# sourceMappingURL=110.63c67712.chunk.js.map
