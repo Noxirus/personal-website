@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { ZIndexCol } from '../../../library/styleLibrary';
+
+import { CardImage, ImageWrapper, ZIndexCol } from '../../../library/styleLibrary';
 
 const VideoEmbed = React.lazy(() => import('../../general/video-embed'));
 
-const CardImage = ({details}) => {
+const ProjectImage = ({details}) => {
   const[viewingTrailer, setViewingTrailer] = useState(false);
 
   function OnHover()
@@ -16,22 +16,12 @@ const CardImage = ({details}) => {
   }
 
    return ( <ZIndexCol onMouseEnter={() => OnHover()} xl="5" lg="6" sm="12">
-   {viewingTrailer ? <VideoEmbed videoUrl={details.videoUrl} /> : <ProjectImage
+   {viewingTrailer ? <VideoEmbed videoUrl={details.videoUrl} /> : <ImageWrapper><CardImage
      alt={details.description}
      title={details.title}
      src={details.img}
      onClick={() => window.open(details.link)}
-   />} 
+   /></ImageWrapper>} 
    </ZIndexCol>);
 }
-export default CardImage;
-
-const ProjectImage = styled.img`
-width:100%;
-height:100%;
-object-fit:cover;
-
-&:hover{
-  cursor: pointer;
-}
-`
+export default ProjectImage;

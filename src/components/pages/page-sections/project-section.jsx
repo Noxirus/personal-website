@@ -19,8 +19,8 @@ const ProjectSection = () => {
             <CenteredTitle>Project Library</CenteredTitle>
         </Col>
         <br />
-        <ProjectCard details={SoapySink} />
-        <ProjectCard details={BabysFirstNightmare} flipped={true}/>
+        <ProjectCard details={BabysFirstNightmare}/>
+        <ProjectCard details={SoapySink} flipped={true}/>
         <ProjectCard details={SumoSurprise} />
         <ProjectCard details={PipePuzzles} flipped={true}/>
         {viewingAllProjects && <ProjectPage />}

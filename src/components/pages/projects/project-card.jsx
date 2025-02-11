@@ -1,26 +1,17 @@
 import React from 'react';
-import { Row } from 'reactstrap';
-import styled from 'styled-components';
-import { ColorPalette } from '../../../library/colorPalette';
 import CardDetails from './card-details';
-import CardImage from './card-image';
+import ProjectImage from './project-image';
+import { StyledCard } from '../../../library/styleLibrary';
 
 const ProjectCard = ({details, flipped}) => {
 
    return (<StyledCard>
     {(flipped && window.innerWidth > 1000) ?
-      <React.Fragment><CardImage details={details} /><CardDetails details={details}/></React.Fragment> : 
-      <React.Fragment><CardDetails details={details}/><CardImage details={details} /></React.Fragment>
+      <React.Fragment><ProjectImage details={details} /><CardDetails details={details}/></React.Fragment> : 
+      <React.Fragment><CardDetails details={details}/><ProjectImage details={details} /></React.Fragment>
     }
       </StyledCard>
   );
 }
 
 export default ProjectCard;
-
-const StyledCard = styled(Row)`
-margin: 15px;
-padding: 15px;
-background-color: ${ColorPalette.quatriary};
-box-shadow: 5px 5px ${ColorPalette.grey};
-`

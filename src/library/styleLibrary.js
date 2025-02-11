@@ -82,3 +82,36 @@ z-index: 2;
 export const ZIndexCol = styled(Col)`
 z-index: 2;
 `
+
+export const PopOutIcon = styled(FontAwesomeIcon)`
+min-width: 50px;
+margin-left: 10px;
+&:hover{
+  cursor: pointer;
+  color: ${ColorPalette.primary}
+}
+`
+export const StyledCard = styled(Row)`
+margin: 15px;
+padding: 15px;
+background-color: ${ColorPalette.quatriary};
+box-shadow: 5px 5px ${ColorPalette.grey};
+`
+export const CardImage = styled.img`
+width:100%;
+
+&:hover{
+  cursor: pointer;
+}
+`
+export const ImageWrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+`;
+
+export const StyledListItem = styled.li`
+font-size: clamp(10px, 4vw, 25px);
+color: ${ColorPalette.tertiary};
+`

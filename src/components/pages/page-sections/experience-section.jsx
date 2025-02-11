@@ -13,9 +13,13 @@ import unrealEngineIcon from "../../../Images/Icons/unreal-engine.svg";
 import cPlusPlusIcon from "../../../Images/Icons/CPlusPlusIcon.svg"
 import npmIcon from "../../../Images/Icons/node-js.svg";
 import { ColorPalette } from '../../../library/colorPalette';
-import { BackgroundRow, CenteredTitle, AutoMarginContainer, ZIndexCol } from '../../../library/styleLibrary';
+import { CenteredTitle, AutoMarginContainer, ZIndexCol, PopOutIcon, StyledCard, CardImage, ImageWrapper, SecondaryText, StyledListItem } from '../../../library/styleLibrary';
 import { ParagraphText } from '../../../library/styleLibrary';
 import Resume from "../../../library/Hamish Harrison Resume.pdf";
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import BVCLogo from "../../../Images/BVCLogo.webp";
+import ExperienceCard from '../experience/experience-card';
+import { BowValleyCollege, CGDA, NiceAxeGames, OtherExperience } from '../../../library/experienceLibrary';
 
 const ExperienceSection = () => {
    return (<AutoMarginContainer id="experience" padding="200px">
@@ -40,22 +44,10 @@ const ExperienceSection = () => {
         </StyledIconCol>  
     </Row>
     <br />
-    <BackgroundRow>
-        <ZIndexCol>
-            <ParagraphText centered={true}>
-                I have been in professional game development for 3 years. The technologies I have primarily worked on include: 
-            </ParagraphText>
-            <ul>
-                <StyledListItem>Unreal Engine games using C++ and Perforce.</StyledListItem>
-                <StyledListItem>Unity WebGL/Android games utilizing: C#/.NET, Google Firebase Cloud, Google Play Console, Google Admob Monetization.</StyledListItem>
-                <StyledListItem>Websites utilzing React, Javascript, Google Firebase Cloud, NPM, Express, Node.JS, MongoDB, JSON, HTML and CSS. </StyledListItem>
-                <StyledListItem>Current technologies I have been working with are: Unreal Engine/C++, Microsoft Azure, Java Springboot</StyledListItem>
-            </ul>
-            <ParagraphText>
-                You can view more information via my <ResumeTag href={Resume} rel="noreferrer" target="_blank">resume here</ResumeTag>.
-            </ParagraphText>
-        </ZIndexCol>
-    </BackgroundRow>
+    <ExperienceCard details={BowValleyCollege} />
+    <ExperienceCard details={CGDA} />
+    <ExperienceCard details={NiceAxeGames} />
+    <ExperienceCard details={OtherExperience} />
 </AutoMarginContainer>);
 }
 export default ExperienceSection;
@@ -66,11 +58,6 @@ color: ${ColorPalette.tertiary};
 &:hover{
     color: ${ColorPalette.primary};
   }
-`
-
-const StyledListItem = styled.li`
-font-size: clamp(10px, 4vw, 25px);
-color: ${ColorPalette.tertiary};
 `
 
 const StyledIconCol = styled(Col)`

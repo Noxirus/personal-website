@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ColorPalette } from '../../../library/colorPalette';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ZIndexCol } from '../../../library/styleLibrary';
+import { PopOutIcon, ZIndexCol } from '../../../library/styleLibrary';
 
 const CardDetails = ({details}) => {
   
@@ -38,13 +37,4 @@ const ParagraphText = styled.p`
 font-size: clamp(10px, 4vw, 25px);
 color: ${ColorPalette.secondary};
 text-align: ${props => props.centered ? "center" : ""};
-`
-
-const PopOutIcon = styled(FontAwesomeIcon)`
-min-width: 50px;
-margin-left: 10px;
-&:hover{
-  cursor: pointer;
-  color: ${ColorPalette.primary}
-}
 `

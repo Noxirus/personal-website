@@ -27,7 +27,8 @@ export const BabysFirstNightmare = {
     img:  BabysFirstNightmareFacade,
     link: "https://globalgamejam.org/games/2024/babys-first-nightmare-5",
     description: "Completed during Global Game Jam, January 26th - 28th, 2024. " +
-    "Multiplayer endless runner with randomly chosen tiles to keep each playthrough different."
+    "Multiplayer endless runner with randomly chosen tiles to keep each playthrough different." + 
+    " Currently being updated for the CGDA Arcade Cabinets."
 }
 
 export const SumoSurprise = {
