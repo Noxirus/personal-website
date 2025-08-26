@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectCard from './project-card';
 import { 
     OmegaProtocol, 
@@ -6,12 +5,14 @@ import {
     ProjectArtemis,
     HamlicksWebsite,
     GymnasticTrial,
-    AbandonShip
+    AbandonShip,
+    PipePuzzles
 } from '../../../library/projectLibrary';
 
 const ProjectPage = () => {
    return (
     <div>
+        <ProjectCard details={PipePuzzles} flipped={true}/>
         <ProjectCard details={AbandonShip}/>
         <ProjectCard details={FinalVerdict}  flipped={true} />
         <ProjectCard details={ProjectArtemis} />

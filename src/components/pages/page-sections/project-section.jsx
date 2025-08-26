@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Row, Col } from 'reactstrap';
 import { CenteredCol, CenteredTitle, AutoMarginContainer, StyledButton } from '../../../library/styleLibrary';
 import ProjectCard from '../projects/project-card';
 import { 
-    PipePuzzles, 
     SumoSurprise,
     SoapySink,
     BabysFirstNightmare,
+    BlueShift,
 } from '../../../library/projectLibrary';
 import ProjectPage from '../projects/project-archive';
 
@@ -19,10 +19,10 @@ const ProjectSection = () => {
             <CenteredTitle>Project Library</CenteredTitle>
         </Col>
         <br />
+        <ProjectCard details={BlueShift} flipped={true}/>
         <ProjectCard details={BabysFirstNightmare}/>
         <ProjectCard details={SoapySink} flipped={true}/>
         <ProjectCard details={SumoSurprise} />
-        <ProjectCard details={PipePuzzles} flipped={true}/>
         {viewingAllProjects && <ProjectPage />}
         <Row>
             <CenteredCol>

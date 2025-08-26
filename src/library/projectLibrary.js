@@ -9,6 +9,19 @@ import OmegaFacade from "../Images/OmegaFacade.webp";
 import SumoSurpriseFacade from "../Images/Cartoon-Sumo.webp";
 import BabysFirstNightmareFacade from "../Images/Babys-First-Nightmare.webp";
 import SoapySinkFacade from "../Images/SoapySink.webp"
+import BlueShiftFacade from "../Images/BlueShiftFacade.webp"
+
+export const BlueShift = {
+    title: "Blue Shift",
+    tech: "Unreal Engine, Blueprints, C++, Git, Davinci Resolve",
+    roles: "Programmer, Designer",
+    img:  BlueShiftFacade,
+    link: "https://youtu.be/uGYVI5cw9Go",
+    videoUrl: "https://www.youtube.com/embed/uGYVI5cw9Go?si=B0_dZS-1Td7FOPpl",
+    description: "Space themed Unreal Engine game made during the Calgary Game Developer Association's Arcade Jam in May 2025. " +
+    "Fly through space shooting at enemy spaceships. Shift between different states for offensive/defensive and mobility enhancements. " +
+    "Randomized quicktime events to supercharge your next shift."
+}
 
 export const SoapySink = {
     title: "Soapy Sink",
@@ -16,6 +29,7 @@ export const SoapySink = {
     roles: "Programmer, Designer",
     img:  SoapySinkFacade,
     link: "https://selsynn.itch.io/soapy-sink",
+    videoUrl: "https://www.youtube.com/embed/e3fvJACWcX4?si=XRW5ncWgha6iud6Z",
     description: "Completed during Global Game Jam, January 24th - 26th, 2025. " +
     "Uses physics to push bubbes around, the larger the bubbles the more points you get. Beware the duck though!"
 }
@@ -37,6 +51,7 @@ export const SumoSurprise = {
     roles: "Programmer, Designer",
     img:  SumoSurpriseFacade,
     link: "https://dirkrugged.itch.io/sumo-surprise",
+    videoUrl: "https://www.youtube.com/embed/oMVZ8iZqpGY?si=CIRlBr5GF0JE51BS",
     description: "Completed during the Alberta Game Jam, August 18th - 20th, 2023. " +
     "Multiplayer game coded using Unreal C++. Push your opponents out of the arena while trying to keep your pants on!"
 }

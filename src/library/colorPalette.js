@@ -16,4 +16,4 @@ const PinkAndBlue ={
     grey: "rgb(29, 29, 29)",
 }
 
-export {PinkAndBlue as ColorPalette}
+export {OrangeAndTeal as ColorPalette}

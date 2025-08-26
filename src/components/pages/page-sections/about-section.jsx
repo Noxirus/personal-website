@@ -20,9 +20,9 @@ const AboutSection = () => {
             Calgary. After a few years of Administrative Assistant work, I decided I wanted a career change.
             </ParagraphText>
             <ParagraphText>
-            I attended the Object Oriented Software Development fast track program at SAIT. During that time I learned: C#, Javascript, HTML, CSS, Java, Android Studio, 
-            SQL Server, OracleDB, Python, Raspberry Pi, VMWare along with security best practices.
-            </ParagraphText>
+            Recently I have been teaching Game Development at Bow Valley College and 
+            working at Nice Axe Games, developing an online multiplayer game in the Unreal Engine.
+            </ParagraphText>  
             <ParagraphText>
             Professionally, I worked at an indie company called Deleptual. During those two years, I helped build multiple virtual team building experiences through the 
             Unity Engine and WebGL format. The task was to ensure that it worked within browsers. As well, I had an opportunity to design and develop a few mobile game 
@@ -30,8 +30,10 @@ const AboutSection = () => {
             Finally, I helped build two live websites front-end and back-end using React and Firebase.
             </ParagraphText>
             <ParagraphText>
-            Recently I have been teaching Game Development at Bow Valley College and working on personal game projects specifically focused on the Unreal Engine.
-            </ParagraphText>      
+            I attended the Object Oriented Software Development fast track program at SAIT. During that time I learned: C#, Javascript, HTML, CSS, Java, Android Studio, 
+            SQL Server, OracleDB, Python, Raspberry Pi, VMWare along with security best practices.
+            </ParagraphText>
+    
         </StyledAboutCol>
         <Col>
             <PersonalImage title="Hamish Harrison" alt="Hamish Harrison" src={Headshot} />
